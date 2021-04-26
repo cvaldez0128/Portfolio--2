@@ -1,21 +1,152 @@
-
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Text, SafeAreaView, Button, View, TextInput } from 'react-native';
+import { Card } from 'react-native-elements';
 
-export default function App() {
-  return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      
-    </View>
-  );
+
+let todoList = [
+  {
+    key: "1",
+    description: "Volunteer in an important political compaign",
+    completed: true
+  },
+  {
+    key: "2",
+    description: "Study all the works of William Shakespeare",
+    completed: true
+  },
+  {
+    key: "3",
+    description: "Learn to play piano",
+    completed: true
+  },
+  {
+    key: "4",
+    description: "Speak fluent French",
+    completed: true
+  },
+  {
+    key: "5",
+    description: "Visit the Sistine Chapal with Abby",
+    completed: true
+  },
+]
+
+export default class App extends React.Component {
+  constructor(props) {
+    super(props)
+    let inputRef = React.createRef()
+    let checkRef = React.createRef()
+    this.state = {todoList,curKey:6,inputRef, checkRef}
+  }
+
+  completeItem = (itemKey) => {
+    this.setState((prevState) => {
+      let prevList = prevState.todoList
+      let itemIndex = prevList.findIndex((item) => item.key == itemKey)
+      prevList[itemIndex].completed = !prevList[itemIndex].completed
+      return {todoList:prevList}
+    })
+  }
+
+  handleKeyPress = (event) => {
+    if (event.key == "Enter") {
+      this.addTodoItem()
+     
+    }
+  }
+
+  
+  addTodoItem = () => {
+    let prevValue = this.state.inputRef.current.value
+    this.setState(prevState => ({
+      todoList: [...prevState.todoList,
+      { completed: false, description: prevValue, key: prevState.curKey }],
+      curKey: prevState.curKey+1
+    }))
+    this.state.inputRef.current.value = ""
+  }  
+  
+  render() {
+    return (
+      <>
+        <View style={styles.container}>
+            <Card>
+                <SafeAreaView style={[styles.container, styles.text]}>
+                    <Text style={styles.hText}><h1>TO-DO LIST</h1></Text>
+
+                    
+                    {this.state.todoList.map((item) => (
+                      <View style={styles.label}>
+                        
+                          <Text style={styles.numbers}>{item.key}</Text>
+                          
+                          <input 
+                              ref={this.state.checkRef} 
+                              type="checkbox" 
+                              onChange={() => this.completeItem(item.key)} 
+                              defaultChecked={item.completed}>
+                          </input>
+                            
+                          <Text style={[styles.text, item.completed ? {textDecoration: "line-through"} : undefined]}>{item.description}</Text>
+                        
+                      </View>
+                    ))}
+                        <br></br>
+                      
+                      
+                    <TextInput style={styles.textInput} onKeyPress={(event) => this.handleKeyPress(event)} ref={this.state.inputRef}></TextInput>
+                    <Button onPress={() => this.addTodoItem()} title="Add new item"></Button>
+                </SafeAreaView>
+            </Card>
+        </View>                                                 
+       
+      </>
+    );
+  }
+
 }
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
+    backgroundColor: '#6e202e',
+    border: "15px solid black",
+    alignItems: "center",
   },
+  card: {
+    backgroundColor: '#6e202e',
+  },
+  text: {
+    color: "white",
+    fontFamily: "Artico Light",
+    textAlign: "center",
+    fontSize: "20px",
+  },
+  numbers: {
+    fontFamily: "Artico Light",
+    color: "white",
+    fontSize: 20,
+  },
+  hText: {
+    color: "white",
+    fontFamily: "Artico Light",
+    textAlign: "center",
+  },
+  button: {
+    textAlign: "center",
+  },
+  textInput: {
+    height: 20,
+    width: 200,
+    marginBottom: 12,
+    marginLeft: 12,
+    marginRight: 12,
+    borderWidth: 2,
+    backgroundColor: "white",
+  },
+  label: {
+    flexDirection: "row",
+    alignSelf: "center",
+  },
+  
 });
