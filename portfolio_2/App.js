@@ -131,6 +131,7 @@ const styles = StyleSheet.create({
     color: "white",
     fontFamily: "Artico Light",
     textAlign: "center",
+    fontSize: 30,
   },
   button: {
     textAlign: "center",
