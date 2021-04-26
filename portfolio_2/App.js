@@ -72,7 +72,7 @@ export default class App extends React.Component {
         <View style={styles.container}>
             <Card>
                 <SafeAreaView style={[styles.container, styles.text]}>
-                    <Text style={styles.hText}><h1>TO-DO LIST</h1></Text>
+                    <Text style={styles.hText}>TO-DO LIST</Text>
 
                     
                     {this.state.todoList.map((item) => (
@@ -91,7 +91,7 @@ export default class App extends React.Component {
                         
                       </View>
                     ))}
-                        <br></br>
+                        
                       
                       
                     <TextInput style={styles.textInput} onKeyPress={(event) => this.handleKeyPress(event)} ref={this.state.inputRef}></TextInput>
