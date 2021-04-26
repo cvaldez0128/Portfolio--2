@@ -74,7 +74,7 @@ export default class App extends React.Component {
                 <SafeAreaView style={[styles.container, styles.text]}>
                     <Text style={styles.hText}>TO-DO LIST{"\n"}</Text>
                     
-                    
+
                     {this.state.todoList.map((item) => (
                       <View style={styles.label}>
                         
