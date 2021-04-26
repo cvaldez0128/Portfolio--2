@@ -72,7 +72,7 @@ export default class App extends React.Component {
         <View style={styles.container}>
             <Card>
                 <SafeAreaView style={[styles.container, styles.text]}>
-                    <Text style={styles.hText}>TO-DO LIST</Text>
+                    <Text style={styles.hText}>TO-DO LIST{"\n"}</Text>
                     
                     
                     {this.state.todoList.map((item) => (
