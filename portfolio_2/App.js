@@ -33,9 +33,6 @@ export default function doLogin() {
   let passRef = useRef(null)
   let userRef = useRef(null)
   
-let logout = () => {
-    setLoggedIn(false)
-  }
   
   let login = () => {
     if (passRef.current.value == "Ch@rge!") {
@@ -46,7 +43,10 @@ let logout = () => {
       document.getElementById("error").innerHTML = ("WRONG PASSWORD! TRY AGAIN.")
     }
   }
-
+  
+  let logout = () => {
+      setLoggedIn(false)
+    }
 
   
   return (
@@ -58,10 +58,14 @@ let logout = () => {
               
                 {loggedIn ?
               
-                  
-                  <LoginApp></LoginApp> :
-              
-                undefined}
+                <>
+                  <LoginApp></LoginApp>
+                  <Button
+                    onPress={logout}
+                    title="Log Out"
+                  ></Button> 
+                </>
+               : undefined}
               
               
               {
