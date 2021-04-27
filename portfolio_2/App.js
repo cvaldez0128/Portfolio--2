@@ -15,10 +15,6 @@ function LoginApp () {
                         <h1>Welcome, {USER}!</h1>
                     </Text>
                 <Todo></Todo>
-                 <Button 
-                  onPress={logout}
-                  title="Log Out"
-                ></Button>
                 </View>
               
             )
@@ -61,7 +57,12 @@ export default function doLogin() {
 
           <View style={[styles.container, styles.body]}>
               
-             
+              {loggedIn ?
+                <Button 
+                  onPress={logout}
+                  title="Log Out"
+                ></Button> :
+              undefined}
               
               {
 
