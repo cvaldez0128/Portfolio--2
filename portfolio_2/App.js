@@ -52,17 +52,17 @@ export default function doLogin() {
   
   return (
     <>
-        {loggedIn ?
-      
-          
-          <LoginApp></LoginApp> :
-      
-        undefined}
 
        
 
           <View style={[styles.container, styles.body]}>
               
+                {loggedIn ?
+              
+                  
+                  <LoginApp></LoginApp> :
+              
+                undefined}
               
               
               {
