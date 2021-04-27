@@ -69,13 +69,7 @@ export default class App extends React.Component {
     this.state.inputRef.current.value = ""
   } 
   
-  ShowCurrentDate = () => {
-    var date = new Date().getDate();
-    var month = new Date().getMonth() + 1;
-    var year = new Date().getFullYear();
 
-    Alert.alert(date + '-' + month + '-' + year);
-  }
   
   render() {
     return (
@@ -111,7 +105,7 @@ export default class App extends React.Component {
             </Card> 
 
             
-           <Button title="Show the Date" onPress={this.ShowCurrentDate}/>
+           
         </View>                                                 
        
       </>
