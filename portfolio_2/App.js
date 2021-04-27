@@ -1,161 +1,140 @@
 import React from 'react';
-import { StyleSheet, Text, SafeAreaView, Button, View, TextInput } from 'react-native';
-import { Card } from 'react-native-elements';
+import { useState, useRef } from 'react'
+import { StyleSheet, View, Text, TextInput, Button } from 'react-native';
+
+const USER = "cvaldez2218"
 
 
+function LoginApp () {
+            return (
+              
+                <View style={styles.body}>
+                    <Text 
+                        style={styles.text}>
+                        <h1>Welcome, {USER}!</h1>
+                    </Text>
 
-let todoList = [
-  {
-    key: "1",
-    description: "Volunteer in an important political compaign",
-    completed: true
-  },
-  {
-    key: "2",
-    description: "Study all the works of William Shakespeare",
-    completed: true
-  },
-  {
-    key: "3",
-    description: "Learn to play piano",
-    completed: true
-  },
-  {
-    key: "4",
-    description: "Speak fluent French",
-    completed: true
-  },
-  {
-    key: "5",
-    description: "Visit the Sistine Chapal with Abby",
-    completed: true
-  },
-]
+                </View>
+              
+            )
+}
 
-export default class App extends React.Component {
-  constructor(props) {
-    super(props)
-    let inputRef = React.createRef()
-    let checkRef = React.createRef()
-    this.state = {todoList,curKey:6,inputRef, checkRef}
-  }
+export default function doLogin() {
 
+  
 
+  let [loggedIn,setLoggedIn] = useState(false)
+  let passRef = useRef(null)
+  let userRef = useRef(null)
+  
 
-  completeItem = (itemKey) => {
-    this.setState((prevState) => {
-      let prevList = prevState.todoList
-      let itemIndex = prevList.findIndex((item) => item.key == itemKey)
-      prevList[itemIndex].completed = !prevList[itemIndex].completed
-      return {todoList:prevList}
-    })
-  }
-
-  handleKeyPress = (event) => {
-    if (event.key == "Enter") {
-      this.addTodoItem()
-     
+  
+  let login = () => {
+    if (passRef.current.value == "Ch@rge!") {
+      setLoggedIn(true)
+      console.log("Password accecpted")
+    } else {
+      console.log("Password is incorrect")
+      document.getElementById("error").innerHTML = ("WRONG PASSWORD! TRY AGAIN.")
     }
   }
 
-  
-  addTodoItem = () => {
-    let prevValue = this.state.inputRef.current.value
-    this.setState(prevState => ({
-      todoList: [...prevState.todoList,
-      { completed: false, description: prevValue, key: prevState.curKey }],
-      curKey: prevState.curKey+1
-    }))
-    this.state.inputRef.current.value = ""
-  } 
-  
-
-  
-  render() {
-    return (
-      <>
-        <View style={styles.container}>
-            <Card>
-                <SafeAreaView style={[styles.container, styles.text]}>
-                    <Text style={styles.hText}>TO-DO LIST{"\n"}</Text>
-                    <Card.Divider></Card.Divider>
-                    
-                    {this.state.todoList.map((item) => (
-                      <View style={styles.label}>
-                        
-                          <Text style={styles.numbers}>{item.key}</Text>
-                          
-                          <input 
-                              ref={this.state.checkRef} 
-                              type="checkbox" 
-                              onChange={() => this.completeItem(item.key)} 
-                              defaultChecked={item.completed}>
-                          </input>
-                            
-                          <Text style={[styles.text, item.completed ? {textDecoration: "line-through"} : undefined]}>{item.description}</Text>
-                        
-                      </View>
-                    ))}
-                        
-                      
-                      
-                    <TextInput style={styles.textInput} onKeyPress={(event) => this.handleKeyPress(event)} ref={this.state.inputRef}></TextInput>
-                    <Button onPress={() => this.addTodoItem()} title="Add new item"></Button>
-                </SafeAreaView>
-            </Card> 
-
-            
-           
-        </View>                                                 
-       
-      </>
-    );
+  let logout = () => {
+    setLoggedIn(false)
   }
+  
+  return (
+    <>
+        {loggedIn ?
+          <LoginApp></LoginApp> :
+        undefined}
 
-}
+       
 
-const styles = StyleSheet.create({
+          <View style={[styles.container, styles.body]}>
+              
+              {loggedIn ?
+                <Button 
+                  onPress={logout}
+                  title="Log Out"
+                ></Button> :
+              undefined}
+              
+              {
+
+                !loggedIn ?
+                <>
+               
+                    <Text style={styles.text}>
+                      <h1>WELCOME, PLEASE LOG IN BELOW</h1>
+                    </Text>
+                   
+                    <TextInput
+                    style={styles.textInput}
+                    ref={userRef}
+                    placeholder="Username"
+                    ></TextInput>
+                    
+                   
+                        <TextInput
+                        style={styles.textInput}
+                        ref={passRef}
+                        placeholder="Password"
+                        secureTextEntry={true}
+                        ></TextInput>
+                      <Button 
+                        onPress={login}
+                        title="Login">
+                      </Button>
+                      
+                      <br></br>
+                     
+                      <Text 
+                      style={styles.errorMessage}>
+                      <p id="error"></p>
+                      </Text>
+
+                      
+
+                      </> : undefined}
+
+            </View>
+          </>
+    )
+    
+  }
+        
+  
+  const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#6e202e',
-    borderWidth: 15,
-    alignItems: "center",
-  },
-  card: {
-    backgroundColor: '#6e202e',
+    backgroundColor: "aquamarine",
+    alignItems: 'center',
+    
   },
   text: {
-    color: "white",
     fontFamily: "Artico Light",
     textAlign: "center",
-    fontSize: "20px",
   },
-  numbers: {
-    fontFamily: "Artico Light",
-    color: "white",
-    fontSize: 20,
-  },
-  hText: {
-    color: "white",
-    fontFamily: "Artico Light",
-    textAlign: "center",
-    fontSize: 30,
-  },
-  button: {
-    textAlign: "center",
+  body: {
+    backgroundColor: "aquamarine",
+    border: "15px solid black",
   },
   textInput: {
-    height: 20,
-    width: 200,
+    height: 40,
     marginBottom: 12,
     marginLeft: 12,
     marginRight: 12,
-    borderWidth: 2,
-    backgroundColor: "white",
+    borderWidth: 1,
   },
-  label: {
-    flexDirection: "row",
-    alignSelf: "center",
+  errorMessage: {
+    height: 15,
+    paddingLeft: 12,
+    color: "red",
+    fontSize: ".75rem",
+    fontFamily: "Artico Light",
   },
-  
+  error: {
+    fontFamily: "Artico Light",
+  }
 });
