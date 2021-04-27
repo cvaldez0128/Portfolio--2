@@ -1,4 +1,5 @@
 import React from 'react';
+import { Alert } from 'react-native';
 import { StyleSheet, Text, SafeAreaView, Button, View, TextInput } from 'react-native';
 import { Card } from 'react-native-elements';
 
@@ -72,6 +73,8 @@ export default class App extends React.Component {
     var date = new Date().getDate();
     var month = new Date().getMonth() + 1;
     var year = new Date().getFullYear();
+
+    Alert.alert(date + '-' + month + '-' + year);
   }
   
   render() {
@@ -108,7 +111,7 @@ export default class App extends React.Component {
             </Card> 
 
             
-           
+           <Button title="Show the Date" onPress={this.ShowCurrentDate}/>
         </View>                                                 
        
       </>
