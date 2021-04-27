@@ -1,6 +1,7 @@
 import React from 'react';
 import { useState, useRef } from 'react'
 import { StyleSheet, View, Text, TextInput, Button } from 'react-native';
+import { Card } from 'react-native-elements';
 import Todo from './components/todo';
 
 const USER = "cvaldez2218"
@@ -60,6 +61,7 @@ export default function doLogin() {
               
                 <>
                   <LoginApp></LoginApp>
+                  <Card.Divider/>
                   <Button
                     onPress={logout}
                     title="Log Out"
