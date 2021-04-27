@@ -40,7 +40,7 @@ export default class App extends React.Component {
     this.state = {todoList,curKey:6,inputRef, checkRef}
   }
 
-  const [currentDate, setcurrentDate] = useState('')
+
 
   completeItem = (itemKey) => {
     this.setState((prevState) => {
