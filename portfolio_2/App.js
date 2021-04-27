@@ -2,7 +2,7 @@ import React from 'react';
 import { StyleSheet, Text, SafeAreaView, Button, View, TextInput } from 'react-native';
 import { Card } from 'react-native-elements';
 
-const USER = "cvaldez2218"
+
 
 let todoList = [
   {
