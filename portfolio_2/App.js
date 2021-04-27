@@ -22,7 +22,7 @@ function LoginApp () {
                         onPress={logout}
                         title="Log Out"
                     ></Button>
-                <Todo></Todo>
+                
                 </View>
               
             )
@@ -123,7 +123,7 @@ export default function doLogin() {
   },
   body: {
     backgroundColor: "aquamarine",
-    border: "15px solid black",
+    borderWidth: 15,
   },
   textInput: {
     height: 40,
