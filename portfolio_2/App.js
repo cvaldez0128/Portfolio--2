@@ -102,7 +102,13 @@ export default class App extends React.Component {
                 </SafeAreaView>
             </Card>
 
-            
+            <NavigationContainer>
+              <Drawer.Navigator initialRouteName="Home">
+                <Drawer.Screen name="Home" component={HomeScreen} />
+                <Drawer.Screen name="Notifications" component={NotificationsScreen} />
+              </Drawer.Navigator>
+            </NavigationContainer>
+            <Text>Hello</Text>
         </View>                                                 
        
       </>
