@@ -77,9 +77,7 @@ const Drawer = createDrawerNavigator();
 export default function App() {
   return (
     <NavigationContainer>
-      <Drawer.Navigator initialRouteName="Home" drawerContent={(props) => <TodoList{...props} />}>
-        <Drawer.Screen name="Home" component={HomeScreen} />
-      </Drawer.Navigator>
+      
     </NavigationContainer>
   );
 }
