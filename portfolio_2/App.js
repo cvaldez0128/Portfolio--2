@@ -1,7 +1,7 @@
 import React from 'react';
 import { StyleSheet, Text, SafeAreaView, Button, View, TextInput } from 'react-native';
 import { Card } from 'react-native-elements';
-import { NavigationContainer } from '@react-navigation/native';
+
 
 let todoList = [
   {
@@ -101,9 +101,7 @@ export default class App extends React.Component {
                 </SafeAreaView>
             </Card> 
 
-            <NavigationContainer>
-              
-            </NavigationContainer>
+            
            
         </View>                                                 
        
