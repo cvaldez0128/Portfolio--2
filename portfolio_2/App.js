@@ -1,6 +1,7 @@
 import React from 'react';
 import { useState, useRef } from 'react'
 import { StyleSheet, View, Text, TextInput, Button } from 'react-native';
+import Todo from './components/todo';
 
 const USER = "cvaldez2218"
 
@@ -46,7 +47,7 @@ export default function doLogin() {
   return (
     <>
         {loggedIn ?
-          <LoginApp></LoginApp> :
+          <Todo></Todo> :
         undefined}
 
        
