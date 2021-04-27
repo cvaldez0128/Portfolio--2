@@ -11,6 +11,8 @@ function LoginApp () {
     let logout = () => {
     setLoggedIn(false)
   }
+
+   
             return (
               
                 <>
@@ -18,10 +20,7 @@ function LoginApp () {
                         style={styles.text}>
                         <h1>Welcome, {USER}!</h1>
                     </Text>
-                    <Button 
-                        onPress={logout}
-                        title="Log Out"
-                    ></Button>
+                   
                     <Todo></Todo>
                 </>
               
