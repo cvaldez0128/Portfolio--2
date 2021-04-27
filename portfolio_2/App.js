@@ -1,8 +1,8 @@
 import React from 'react';
-import { Alert } from 'react-native';
 import { StyleSheet, Text, SafeAreaView, Button, View, TextInput } from 'react-native';
 import { Card } from 'react-native-elements';
 
+const
 
 let todoList = [
   {
