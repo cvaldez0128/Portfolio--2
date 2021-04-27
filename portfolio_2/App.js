@@ -8,9 +8,7 @@ const USER = "cvaldez2218"
 
 function LoginApp () {
 
-    let logout = () => {
-    setLoggedIn(false)
-  }
+    
 
    
             return (
@@ -35,7 +33,9 @@ export default function doLogin() {
   let passRef = useRef(null)
   let userRef = useRef(null)
   
-
+let logout = () => {
+    setLoggedIn(false)
+  }
   
   let login = () => {
     if (passRef.current.value == "Ch@rge!") {
