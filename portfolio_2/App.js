@@ -14,7 +14,7 @@ function LoginApp () {
                         style={styles.text}>
                         <h1>Welcome, {USER}!</h1>
                     </Text>
-
+                <Todo></Todo>
                 </View>
               
             )
@@ -47,7 +47,10 @@ export default function doLogin() {
   return (
     <>
         {loggedIn ?
-          <Todo></Todo> :
+      
+          
+          <LoginApp></LoginApp> :
+      
         undefined}
 
        
