@@ -22,7 +22,7 @@ function LoginApp () {
                         onPress={logout}
                         title="Log Out"
                     ></Button>
-                
+                    <Todo></Todo>
                 </>
               
             )
