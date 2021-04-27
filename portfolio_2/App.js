@@ -13,7 +13,7 @@ function LoginApp () {
   }
             return (
               
-                <View style={styles.body}>
+                <>
                     <Text 
                         style={styles.text}>
                         <h1>Welcome, {USER}!</h1>
@@ -23,7 +23,7 @@ function LoginApp () {
                         title="Log Out"
                     ></Button>
                 
-                </View>
+                </>
               
             )
 }
