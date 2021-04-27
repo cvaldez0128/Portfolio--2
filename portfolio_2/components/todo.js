@@ -74,7 +74,7 @@ export default class App extends React.Component {
   render() {
     return (
       <>
-        <View style={styles.container}>
+        
             <Card>
                 <SafeAreaView style={[styles.container, styles.text]}>
                     <Text style={styles.hText}>TO-DO LIST{"\n"}</Text>
@@ -106,7 +106,7 @@ export default class App extends React.Component {
 
             
            
-        </View>                                                 
+                                                     
        
       </>
     );
