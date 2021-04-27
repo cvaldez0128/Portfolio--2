@@ -7,6 +7,10 @@ const USER = "cvaldez2218"
 
 
 function LoginApp () {
+
+    let logout = () => {
+    setLoggedIn(false)
+  }
             return (
               
                 <View style={styles.body}>
@@ -14,6 +18,10 @@ function LoginApp () {
                         style={styles.text}>
                         <h1>Welcome, {USER}!</h1>
                     </Text>
+                    <Button 
+                        onPress={logout}
+                        title="Log Out"
+                    ></Button>
                 <Todo></Todo>
                 </View>
               
@@ -40,9 +48,7 @@ export default function doLogin() {
     }
   }
 
-  let logout = () => {
-    setLoggedIn(false)
-  }
+
   
   return (
     <>
@@ -57,12 +63,7 @@ export default function doLogin() {
 
           <View style={[styles.container, styles.body]}>
               
-              {loggedIn ?
-                <Button 
-                  onPress={logout}
-                  title="Log Out"
-                ></Button> :
-              undefined}
+              
               
               {
 
