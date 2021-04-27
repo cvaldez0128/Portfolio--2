@@ -98,6 +98,8 @@ export default class App extends React.Component {
                     <Button onPress={() => this.addTodoItem()} title="Add new item"></Button>
                 </SafeAreaView>
             </Card>
+
+            
         </View>                                                 
        
       </>
