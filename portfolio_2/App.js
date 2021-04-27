@@ -66,7 +66,13 @@ export default class App extends React.Component {
       curKey: prevState.curKey+1
     }))
     this.state.inputRef.current.value = ""
-  }  
+  } 
+  
+  ShowCurrentDate = () => {
+    var date = new Date().getDate();
+    var month = new Date().getMonth() + 1;
+    var year = new Date().getFullYear();
+  }
   
   render() {
     return (
