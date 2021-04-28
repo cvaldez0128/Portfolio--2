@@ -6,7 +6,9 @@ export default class Date extends React.Component {
 
     render() {
         
-        let radio_buttons = 
+        let submitSurvey = () => {
+            if
+        }
     
    
         return (
