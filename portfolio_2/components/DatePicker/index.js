@@ -39,10 +39,16 @@ export default class Date extends React.Component {
                                 </fieldset>
                             </div>
                        </Text>
+                       <Card.Divider/>
+                       <Text style={styles.text}>
+                            <div class="survey">
+                                
+                            </div>
+
+                       </Text>
 
                        
                        
-                       <Card.Divider/>
                    </SafeAreaView>
                </Card>
               
