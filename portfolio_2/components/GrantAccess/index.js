@@ -8,6 +8,8 @@ export function VideoPlayer () {
     const video = React.useRef(null);
     const [Status, setStatus] = React.useState({});
    return (
+       <Card>
+
     <View style={styles.container}>
       <Video
         ref={video}
@@ -22,6 +24,7 @@ export function VideoPlayer () {
       />
       
     </View>
+       </Card>
   );
 }
 
