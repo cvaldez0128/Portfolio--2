@@ -8,9 +8,7 @@ export default class Date extends React.Component {
   
     render() {
         
-        let [enteredInfo,correctEnteredInfo] = usesState(false)
-        let [loggedIn,setLoggedIn] = useState(false)
-
+       
     
 
         

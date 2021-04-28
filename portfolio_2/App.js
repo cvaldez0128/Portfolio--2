@@ -1,6 +1,6 @@
 import React from 'react';
 import { useState, useRef } from 'react'
-import { StyleSheet, View, Text, TextInput, Button, SafeAreaView } from 'react-native';
+import { StyleSheet, View, Text, TextInput, Button, RadioButton } from 'react-native';
 import { Card } from 'react-native-elements';
 import Todo from './components/todo';
 import Date from './components/DatePicker';
@@ -24,16 +24,7 @@ function LoginApp () {
                 <Todo></Todo>
                 
                 <Card.Divider/>
-                  <Card>
-                   <SafeAreaView style={styles.container}>
-                       <Text style={styles.header}>PLEASE ENTER THE PROVIDED INFORMATION:</Text>
-                       <Card.Divider/>
-                       <Text style={styles.text}>NAME: KIM NAMJOON</Text>
-                       <Text style={styles.text}>AGE: 26</Text>
-                       <Text style={styles.text}>TITLE: ARTIST</Text>
-                       <Card.Divider/>
-                   </SafeAreaView>
-               </Card>
+                <Date></Date>
                 
             </>
                 
