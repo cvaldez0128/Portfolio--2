@@ -4,6 +4,7 @@ import { StyleSheet, View, Text, TextInput, Button } from 'react-native';
 import { Card } from 'react-native-elements';
 import Todo from './components/todo';
 import Date from './components/DatePicker';
+import ImageGallery from './components/ImageGallery';
 
 
 const USER = "cvaldez2218"
@@ -23,7 +24,7 @@ function LoginApp () {
                 <Todo></Todo>
                 
                 <Card.Divider/>
-                
+                <Date></Date>
             </>
                 
                 
