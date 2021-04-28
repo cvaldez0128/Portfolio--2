@@ -14,10 +14,9 @@ function TestApp () {
 export default class Date extends React.Component {
 
     render() {
-        
         let [loggedIn, setLoggedIn] = useState(false)
         let passRef = useRef(null)
-
+    
         let access = () => {
             if (passRef.current.value == "vaccine") {
                 setLoggedIn(true)
@@ -25,6 +24,7 @@ export default class Date extends React.Component {
             }
         }
         
+
         return (
             <>
 
