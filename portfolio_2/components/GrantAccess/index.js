@@ -17,6 +17,13 @@ export default function passWord() {
 
     let [accessIn,setAccessIn] = useState(false)
     let codeRef = useRef(null)
+
+    handleKeyPress = (event) => {
+    if (event.key == "Enter") {
+      this.access()
+     
+    }
+  }
     
     let access = () => {
         if (codeRef.current.value == "vaccine") {
