@@ -4,7 +4,22 @@ import { Card } from 'react-native-elements';
 
 
 
-export default fun
+export default function App() {
+    return (
+        
+               <Card>
+                   <SafeAreaView style={styles.container}>
+                       <Text style={styles.header}>PLEASE ENTER THE PROVIDED INFORMATION:</Text>
+                       <Card.Divider/>
+                       <Text style={styles.text}>NAME: KIM NAMJOON</Text>
+                       <Text style={styles.text}>AGE: 26</Text>
+                       <Text style={styles.text}>TITLE: ARTIST</Text>
+                      
+                   </SafeAreaView>
+               </Card>
+              
+    )
+}
         
       
     
