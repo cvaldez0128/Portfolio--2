@@ -10,3 +10,9 @@ export default class ImageGallery extends React.component {
         );
     }
 }
+
+const styles = StyleSheet.create({
+
+});
+
+AppRegistry.registerComponent('ImageGallery', () => ImageGallery);
