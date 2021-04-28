@@ -13,7 +13,11 @@ function RadioButton () {
 
   return (
       <View>
-          
+          <RadioButton
+            value="first"
+            status={ checked === 'first' ? 'checked' : 'unchecked' }
+            onPress={() => setChecked('first')}
+          />
       </View>
   );
 }
