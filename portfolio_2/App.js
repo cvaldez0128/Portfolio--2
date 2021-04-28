@@ -20,8 +20,9 @@ function RadioButton () {
           />
       </View>
   );
-}
+};
 
+export default RadioButton;
 
 function LoginApp () {
 
