@@ -15,7 +15,7 @@ export function VideoPlayer () {
                 ref={video}
                 style={styles.video}
                 source={{
-                uri: 'https://drive.google.com/file/d/1U4A-e_I0xUlI1GYmnyGZklbgZ77MKGE3/view?usp=sharing',
+                url: 'https://students.cah.ucf.edu/~ch869274/dig3716c/Life%20Goes%20On%20-%20Lyrics/img/Life%20Goes%20On%20-%20Lyrics.mp4',
                 }}
                 type="video/mp4"
                 useNativeControls
