@@ -14,6 +14,8 @@ export default class Date extends React.Component {
                     <Text>This is a test</Text>
                     <RadioButton
                         value="first"
+                        status={ checked === 'first' ? 'checked' : 'unchecked' }
+                        onPress={() => setChecked('first')}
                     ></RadioButton>
                 </Card>
             </>
