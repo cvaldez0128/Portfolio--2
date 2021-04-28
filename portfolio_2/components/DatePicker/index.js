@@ -14,7 +14,15 @@ export default class Date extends React.Component {
                <Card>
                    <SafeAreaView style={styles.container}>
                        <Text style={styles.header}>THE NEXT COMPONENT IS PASSWORD PROTECTED</Text>
-                       <Text style={styles.text}>Hint: Getting this is entirely optional. Some are waiting, some have already gotten it. It will prevent the spread.</Text>
+                       <Card.Divider/>
+                       <Text style={styles.text}>
+                            Hint: Getting this is entirely optional. 
+                            Some are waiting, some have already gotten it. 
+                            It will prevent the spread.
+                            One word, all lowercase.
+                        </Text>
+                        <Card.Divider/>
+                        <TextInput></TextInput>
                    </SafeAreaView>
                </Card>
             </>
@@ -46,7 +54,7 @@ const styles = StyleSheet.create({
       fontFamily: "Artico Light",
       color: "white",
       textAlign: "center",
-      fontSize: 20,
+      fontSize: 15,
   },
   header: {
       fontFamily: "Artico Light",
