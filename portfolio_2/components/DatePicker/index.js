@@ -16,3 +16,7 @@ export default class Date extends React.Component {
         );
     }
 }
+
+const styles = StyleSheet.create({
+
+});
