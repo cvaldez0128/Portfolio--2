@@ -23,7 +23,7 @@ function LoginApp () {
                 <Todo></Todo>
                 
                 <Card.Divider/>
-               
+                <Date></Date>
                 
             </>
                 
