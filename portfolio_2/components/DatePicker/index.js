@@ -1,5 +1,5 @@
 import React from 'react';
-import { StyleSheet, View, Text } from 'react-native';
+import { StyleSheet, View, Text, RadioButton } from 'react-native';
 import { Card } from 'react-native-elements';
 
 export default class Date extends React.Component {
@@ -12,6 +12,9 @@ export default class Date extends React.Component {
             <>
                 <Card>
                     <Text>This is a test</Text>
+                    <RadioButton
+                        value="first"
+                    ></RadioButton>
                 </Card>
             </>
         );
