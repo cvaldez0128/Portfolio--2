@@ -38,7 +38,7 @@ export default class Date extends React.Component {
                         ></TextInput>
                         <Button 
                             onPress={access}
-                            title=""
+                            title="Enter"
                         />
                    </SafeAreaView>
                </Card>
