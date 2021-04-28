@@ -22,7 +22,7 @@ function LoginApp () {
                     </Text>
                    
                     <Todo></Todo>
-                    <Date></Date>
+                    
                 </>
               
             )
@@ -68,6 +68,7 @@ export default function doLogin() {
                     onPress={logout}
                     title="Log Out"
                   ></Button> 
+                  <Date></Date>
                 </>
                : undefined}
               
