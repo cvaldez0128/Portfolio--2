@@ -1,5 +1,5 @@
 import React from 'react';
-import { StyleSheet, View, Text } from 'react-native';
+import { StyleSheet, View, Text, SafeAreaView } from 'react-native';
 import { Card } from 'react-native-elements';
 
 export default class Date extends React.Component {
@@ -10,20 +10,29 @@ export default class Date extends React.Component {
     render() {
         return (
             <>
-            
-                <Card style={styles.card}>
-                    <Text>This is a test</Text>
-                </Card>
+                <SafeAreaView style={[styles.container, styles.text]}>
+
+                    <Card>
+                        <Text>This is a test</Text>
+                    </Card>
+
+                </SafeAreaView>
             </>
         );
     }
 }
 
 const styles = StyleSheet.create({
-    card: {
-        backgroundColor: '#6e202e',
-        borderWidth: 15,
-        alignItems: "center",
-    },
-
+    container: {
+    flex: 1,
+    backgroundColor: '#6e202e',
+    borderWidth: 15,
+    alignItems: "center",
+  },
+  text: {
+    color: "white",
+    fontFamily: "Artico Light",
+    textAlign: "center",
+    fontSize: "20px",
+  },
 });
