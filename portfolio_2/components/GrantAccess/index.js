@@ -3,7 +3,7 @@ import { useState, useRef } from 'react'
 import { StyleSheet, View, Text, SafeAreaView, TextInput, Button } from 'react-native';
 import { Card } from 'react-native-elements';
 
-export function TestApp () {
+export function VideoPlayer () {
     return (
         <>
             <Text>This is a test</Text>
@@ -36,7 +36,7 @@ export default function passWord() {
                 {accessIn ?
 
                     <>
-                        <TestApp></TestApp>
+                        <VideoPlayer></VideoPlayer>
                         <Button
                             title="Exit"
                             onPress={back}
