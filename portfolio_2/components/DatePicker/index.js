@@ -65,7 +65,19 @@ export default class Date extends React.Component {
                                 <div>
                                     <label for="eggnogg_id">Eggnog</label>
                                     <input
-                                    id="eggnog"
+                                    id="eggnog_id"
+                                    type="radio"
+                                    name="drink_choice"
+                                    value="Eggnog"
+                                    />
+                                </div>
+                                <div>
+                                    <label for="hot_toddy_id">Hot Toddy</label>
+                                    <input
+                                    id="hot_toddy_id"
+                                    type="radio"
+                                    name="drink_choice"
+                                    value="Hot Toddy"
                                     />
                                 </div>
                                 </fieldset>
