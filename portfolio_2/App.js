@@ -6,7 +6,8 @@ import Todo from './components/todo';
 import Date from './components/DatePicker';
 
 const USER = "cvaldez2218"
-
+const LOGINSCREEN = "loginscreen"
+const DATE = "date"
 
 this.state = {currentScreen: LOGINSCREEN, selectedItem: undefined}
 
