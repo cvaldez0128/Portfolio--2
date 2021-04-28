@@ -28,14 +28,14 @@ export default class Date extends React.Component {
         return (
             <>
 
-                {loggedIn ?
+                {accessIn ?
                     <>
                         <TestApp></TestApp>
                     </>
                 : undefined}
 
 
-            {!loggedIn ?
+            {!accessIn ?
                <Card>
                    <SafeAreaView style={styles.container}>
                        <Text style={styles.header}>THE NEXT COMPONENT IS PASSWORD PROTECTED</Text>
