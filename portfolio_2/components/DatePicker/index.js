@@ -16,7 +16,7 @@ export default class Date extends React.Component {
                         <Text style={styles.quiz}>SHORT QUIZ</Text>
                         <Card.Divider/>
                         <Text style={styles.text}>Pick a fruit: Banana, Strawberry, Blueberry, Apple</Text>
-                        <TextInput style={styles.textInput}></TextInput>
+                        <TextInput style={styles.textInput} type="text" id="fruit"></TextInput>
                     </SafeAreaView>
                 </Card>
 
