@@ -14,6 +14,7 @@ export function VideoPlayer () {
 
             <SafeAreaView style={styles.container}>
                 <Text style={styles.header}>LIFE GOES ON</Text>
+                <Card.Divider/>
             <Video
                 ref={video}
                 style={styles.video}
