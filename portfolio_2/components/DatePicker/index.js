@@ -16,7 +16,7 @@ export default class Date extends React.Component {
                         <Text style={styles.quiz}>SHORT QUIZ</Text>
                         <Card.Divider/>
                         <Text style={styles.text}>Pick a fruit: Banana, Strawberry, Blueberry, Apple</Text>
-                        <TextInput></TextInput>
+                        <TextInput style={styles.textInput}></TextInput>
                     </SafeAreaView>
                 </Card>
 
@@ -45,5 +45,14 @@ const styles = StyleSheet.create({
       color: "white",
       textAlign: "center",
       fontSize: 30,
+  },
+  textInput: {
+    height: 20,
+    width: 200,
+    marginBottom: 12,
+    marginLeft: 12,
+    marginRight: 12,
+    borderWidth: 2,
+    backgroundColor: "white",
   },
 });
