@@ -51,7 +51,10 @@ export default function doLogin() {
       setLoggedIn(false)
     }
 
-  
+  let date = () => {
+    <Date></Date>
+  }
+
   return (
     <>
 
@@ -69,7 +72,10 @@ export default function doLogin() {
                     title="Log Out"
                   ></Button>
                   <Card.Divider/> 
-                  <Date></Date>
+                  <Button 
+                    onPress={date}
+                    title="Date Picker"
+                  ></Button>
                 </>
                : undefined}
               
