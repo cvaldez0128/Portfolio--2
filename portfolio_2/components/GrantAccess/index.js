@@ -150,4 +150,7 @@ const styles = StyleSheet.create({
     borderWidth: 2,
     backgroundColor: "white",
   },
+  video: {
+      width: 1000,
+  },
 });
