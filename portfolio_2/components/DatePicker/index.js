@@ -14,6 +14,7 @@ export default class Date extends React.Component {
                <Card>
                    <SafeAreaView style={styles.container}>
                        <Text style={styles.header}>THE NEXT COMPONENT IS PASSWORD PROTECTED</Text>
+                       <Text style={styles.text}>Hint: </Text>
                    </SafeAreaView>
                </Card>
             </>
