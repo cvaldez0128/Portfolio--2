@@ -2,7 +2,9 @@ import React from 'react';
 import { StyleSheet, View, Text, SafeAreaView, TextInput, Button } from 'react-native';
 import { Card } from 'react-native-elements';
 
-
+function quiz () {
+    
+}
 
 export default class Date extends React.Component {
     constructor(props) {
@@ -14,14 +16,7 @@ export default class Date extends React.Component {
     render() {
         return (
             <>
-                <Card>
-
-                    <SafeAreaView style={styles.container}>
-                        <Text style={styles.quiz}>SHORT QUIZ</Text>
-                        <Card.Divider/>
-                        
-                    </SafeAreaView>
-                </Card>
+               
 
             </>
                     
