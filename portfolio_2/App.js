@@ -4,7 +4,7 @@ import { StyleSheet, View, Text, TextInput, Button } from 'react-native';
 import { Card } from 'react-native-elements';
 import Todo from './components/todo';
 import Date from './components/DatePicker';
-
+import { StackNavigator } from 'react-navigation';
 
 const USER = "cvaldez2218"
 
