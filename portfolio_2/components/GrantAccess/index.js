@@ -5,6 +5,8 @@ import { Card } from 'react-native-elements';
 import { Video, AVPlaybackStatus } from 'expo-av';
 
 export function VideoPlayer () {
+    const video = React.useRef(null);
+    const [Status, setStatus] = React.useState({});
     return (
         <>
             <Text>This is a test</Text>
