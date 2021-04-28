@@ -2,9 +2,12 @@ import React from 'react';
 import { StyleSheet, View, Text, SafeAreaView, TextInput, Button } from 'react-native';
 import { Card } from 'react-native-elements';
 
-
-
 export default class Date extends React.Component {
+
+    function processForm(event) {
+        
+    }
+
   
     render() {
         return (
