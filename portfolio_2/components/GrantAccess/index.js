@@ -21,7 +21,11 @@ export default function passWord() {
             setAccessIn(true)
             console.log("Code accepted")
         }
-    }   
+    } 
+    
+    let return = () => {
+        
+    }
       
         return (
             <>
