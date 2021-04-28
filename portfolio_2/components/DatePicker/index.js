@@ -81,9 +81,16 @@ export default class Date extends React.Component {
                                     />
                                 </div>
 
-                                
 
                                 </fieldset>
+                                <div id="submit_button">
+                                    <input 
+                                    name="submit" 
+                                    type="submit" 
+                                    class="button" 
+                                    id="submit" 
+                                    value="Click to Submit" />
+                                </div>
                             </div>
 
                        </Text>
