@@ -15,7 +15,7 @@ export default class Date extends React.Component {
 
     render() {
         let [accessIn, setAccessIn] = useState(false)
-        let passRef = useRef(null)
+        let codeRef = useRef(null)
     
         let access = () => {
             if (passRef.current.value == "vaccine") {
@@ -49,7 +49,7 @@ export default class Date extends React.Component {
                         <Card.Divider/>
                         <TextInput
                             style={styles.textInput}
-                            ref={passRef}
+                            ref={codeRef}
                             placeholder="Did you guess the code word?"
                             secureTextEntry={true}
                             ></TextInput>
