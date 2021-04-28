@@ -1,4 +1,5 @@
 import React from 'react';
+import { View, Text } from 'react-native';
 
 export default class App extends React.Component {
     constructor(props) {
@@ -7,7 +8,11 @@ export default class App extends React.Component {
 
     render() {
         return (
-
+            <>
+                <View>
+                    <Text>This is a test</Text>
+                </View>
+            </>
         );
     }
 }
