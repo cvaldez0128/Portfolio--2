@@ -25,12 +25,23 @@ export default function passWord() {
       
         return (
             <>
-    
-               <Card>
-                   <SafeAreaView style={styles.container}>
-                    
-                   </SafeAreaView>
-               </Card>
+
+                {accessIn ?
+
+                    <>
+                        <TestApp></TestApp>
+                    </>
+                : undefined}
+
+                {!accessIn ?
+                    <>
+                        <Card>
+                            <SafeAreaView style={styles.container}>
+                                <Text>Enter the code</Text>
+                            </SafeAreaView>
+                        </Card>
+                    </>
+                : accessIn}
             </>
         );
     
