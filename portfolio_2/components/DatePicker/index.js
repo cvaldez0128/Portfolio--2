@@ -84,19 +84,19 @@ export default class Date extends React.Component {
                             </div>
 
                        </Text>
-
-                       
-                       
                    </SafeAreaView>
                </Card>
-              
             </>
-                    
-                  
         );
     }
-    }
+}
+                       
+              
+                    
+                  
         
+
+                       
       
     
 
