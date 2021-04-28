@@ -6,7 +6,7 @@ import { Card } from 'react-native-elements';
 
 export default class Date extends React.Component {
   
-    
+   
 
     
 
