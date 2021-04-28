@@ -17,6 +17,9 @@ function LoginApp () {
       {objName: "Date Picker"},
       
   ]
+  switch (this.state.currentScreen) {
+    
+  }
         return (
             <>
                 <Text 
@@ -25,6 +28,8 @@ function LoginApp () {
                 </Text>
               
                 <Todo></Todo>
+
+                
                 
             </>
           
