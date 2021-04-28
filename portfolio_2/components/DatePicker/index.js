@@ -28,7 +28,13 @@ export default class Date extends React.Component {
                                         />
                                     </div>
                                     <div>
-                                        
+                                        <label for="home_alone_2_id">Home Alone 2</label>
+                                        <input
+                                        id="home_alone_2_id"
+                                        type="radio"
+                                        name="survey_choice"
+                                        value="Home Alone 2"
+                                        />
                                     </div>
                                 </fieldset>
                             </div>
