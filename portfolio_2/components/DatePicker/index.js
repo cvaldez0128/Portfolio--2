@@ -1,13 +1,18 @@
 import React from 'react';
-import { StyleSheet, View, Text, SafeAreaView, TextInput, Button } from 'react-native';
+import { useState, useRef } from 'react'
+import { StyleSheet, Text, SafeAreaView, TextInput, Button } from 'react-native';
 import { Card } from 'react-native-elements';
 
 export default class Date extends React.Component {
 
     render() {
         
+        let [loggedIn, setLoggedIn] = useState(false)
+        let passRef = useRef(null)
 
-   
+        let access = () => {
+            if (passRef.current.value == "vaccine")
+        }
         return (
             <>
     
