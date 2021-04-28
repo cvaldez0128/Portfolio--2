@@ -80,6 +80,8 @@ export default class Date extends React.Component {
                                     value="Hot Toddy"
                                     />
                                 </div>
+                                <div id="submit_button">
+                                    <input name="submit" type="submit" class="button" id="submit" value="Click to Submit"/>
                                 </fieldset>
                             </div>
 
