@@ -7,12 +7,12 @@ export default class ImageGallery extends React.component {
 
     state = {
         modalVisible: false,
-        modalImage: require('./portfolio_2/img/logo.jpg'),
+        modalImage: require('./img/logo.jpg'),
         images: [
-            require('./portfolio_2/img/logo.jpg'),
-            require('./portfolio_2/img/fight.jpeg'),
-            require('./portfolio_2/img/moon.png'),
-            require('./portfolio_2/img/emma.jpg'),
+            require('./img/logo.jpg'),
+            require('./img/fight.jpeg'),
+            require('./img/moon.png'),
+            require('./img/emma.jpg'),
         ]
     }
 
