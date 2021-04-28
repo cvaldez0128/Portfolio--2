@@ -8,19 +8,7 @@ import Date from './components/DatePicker';
 
 const USER = "cvaldez2218"
 
-function Survey () {
-  const [checked, setChecked] = React.useState('first');
 
-  return (
-      <View>
-          <RadioButton
-            value="first"
-            status={ checked === 'first' ? 'checked' : 'unchecked' }
-            onPress={() => setChecked('first')}
-          />
-      </View>
-  );
-}
 
 
 
@@ -37,7 +25,7 @@ function LoginApp () {
                 
                 <Card.Divider/>
                 <Date></Date>
-                <Survey></Survey>
+                
             </>
                 
                 
