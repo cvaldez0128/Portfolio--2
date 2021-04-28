@@ -1,6 +1,6 @@
 import React from 'react';
 import { useState, useRef } from 'react'
-import { StyleSheet, View, Text, TextInput, Button } from 'react-native';
+import { StyleSheet, View, Text, TextInput, Button, RadioButton } from 'react-native';
 import { Card } from 'react-native-elements';
 import Todo from './components/todo';
 import Date from './components/DatePicker';
@@ -8,7 +8,15 @@ import Date from './components/DatePicker';
 
 const USER = "cvaldez2218"
 
+function RadioButton () {
+  const [checked, setChecked] = React.useState('first');
 
+  return (
+      <View>
+          
+      </View>
+  );
+}
 
 
 function LoginApp () {
