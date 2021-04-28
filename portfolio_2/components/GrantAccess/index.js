@@ -13,6 +13,7 @@ export function VideoPlayer () {
        <Card>
 
             <SafeAreaView style={styles.container}>
+                <Text style={styles.header}>LIFE GOES ON</Text>
             <Video
                 ref={video}
                 style={styles.video}
