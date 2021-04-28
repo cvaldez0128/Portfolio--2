@@ -25,7 +25,10 @@ function LoginApp () {
                 </Text>
               
                 <Todo></Todo>
-
+                <Card.Divider/>
+                <Button
+                  title="Date Picker"
+                  onPress={() => this.props.navigation.navigate("Date")}/>
             </>
                 
                 
