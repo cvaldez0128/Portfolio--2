@@ -5,7 +5,7 @@ export default class ImageElement extends React.component {
     render() {
         return (
             <>
-            
+                <Image source={this.props.imgsource} style={styles.image}></Image>
             </>
         );
     }
