@@ -24,7 +24,7 @@ export default class Date extends React.Component {
                         <Card.Divider/>
                         <Text style={styles.text}>Pick a fruit: Banana, Strawberry, Blueberry, Apple</Text>
                         <TextInput style={styles.textInput} type="text" id="fruit"></TextInput>
-                        <Button type="submit" onClick></Button>
+                        <Button type="submit" title="Submit" onPress={fruits}></Button>
                     </SafeAreaView>
                 </Card>
 
