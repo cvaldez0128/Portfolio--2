@@ -20,7 +20,7 @@ export default class Date extends React.Component {
                        <Text style={styles.header}>PLEASE ENTER THE PROVIDED INFORMATION:</Text>
                        <Text>NAME: KIM NAMJOON</Text>
                        <Text>AGE: 26</Text>
-                       <Text
+                       <Text>TITLE: ARTIST</Text>
                    </SafeAreaView>
                </Card>
               
