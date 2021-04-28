@@ -103,7 +103,13 @@ export default class Date extends React.Component {
                             </div>
 
                        </Text>
-                       
+                        <Card.Divider/>
+                        <Text style={styles.text}>
+                            <div>
+                                <p id="survey"></p>
+                                <p id="drink"></p>
+                            </div>    
+                        </Text>                       
                    </SafeAreaView>
                </Card>
             </>
