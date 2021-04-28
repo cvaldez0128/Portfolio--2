@@ -11,7 +11,7 @@ const USER = "cvaldez2218"
 const Navigation = StackNavigator({
   Date: {
     screen: Date,
-  }
+  },
 })
 
 
