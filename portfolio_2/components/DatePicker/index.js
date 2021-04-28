@@ -10,6 +10,11 @@ export default class Date extends React.Component {
         function validateData() {
             document.myform.addEventListener("submit", processForm, false);
         }
+
+        function processForm(event) {
+            event.preventDefault();
+        }
+
         window.addEventListener("load", validateData, false);
         return (
             <>
