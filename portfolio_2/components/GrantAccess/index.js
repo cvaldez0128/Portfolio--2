@@ -15,7 +15,7 @@ export function VideoPlayer () {
                 ref={video}
                 style={styles.video}
                 source={{
-                uri: 'https://www.youtube.com/watch?v=nQ-xg5F4fbU',
+                uri: 'https://gdurl.com/nUNM',
                 }}
                 useNativeControls
                 resizeMode="contain"
