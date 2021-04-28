@@ -84,7 +84,7 @@ export default class Date extends React.Component {
 
 
                                 </fieldset>
-                                <Button title="Submit" onPress={processForm}></Button>
+                                <Button title="Submit"></Button>
                             </div>
 
                        </Text>
