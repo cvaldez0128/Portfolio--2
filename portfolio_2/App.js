@@ -8,12 +8,7 @@ import { StackNavigator } from 'react-navigation';
 
 const USER = "cvaldez2218"
 
-const Navigation = StackNavigator({
-  Date: {
-    screen: Date,
-  },
-})
-export default Navigation;
+
 
 function LoginApp () {
 
@@ -25,10 +20,7 @@ function LoginApp () {
                 </Text>
               
                 <Todo></Todo>
-                <Card.Divider/>
-                <Button
-                  title="Date Picker"
-                  onPress={() => this.props.navigation.navigate("Date")}/>
+                
             </>
                 
                 
@@ -85,7 +77,9 @@ export default function doLogin() {
                     title="Log Out"
                   ></Button>
                   <Card.Divider/> 
-                 
+                 <Button
+                  title="Date Picker"
+                  onPress={() => this.props.navigation.navigate("Date")}/>
                 </>
                : undefined}
               
