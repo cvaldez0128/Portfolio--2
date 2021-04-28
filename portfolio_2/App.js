@@ -3,10 +3,11 @@ import { useState, useRef } from 'react'
 import { StyleSheet, View, Text, TextInput, Button } from 'react-native';
 import { Card } from 'react-native-elements';
 import Todo from './components/todo';
-import
+import Date from './components/DatePicker';
+
+
+
 const USER = "cvaldez2218"
-
-
 
 function LoginApp () {
 
@@ -15,6 +16,11 @@ function LoginApp () {
                 <Text 
                     style={styles.text}>
                     <h1>Welcome, {USER}!</h1>
+                </Text>
+                <Text
+                  style={styles.text}>
+                    Hello
+                  
                 </Text>
               
                 <Todo></Todo>
