@@ -8,7 +8,7 @@ import Date from './components/DatePicker';
 
 const USER = "cvaldez2218"
 
-function RadioButton () {
+function Survey () {
   const [checked, setChecked] = React.useState('first');
 
   return (
@@ -20,9 +20,9 @@ function RadioButton () {
           />
       </View>
   );
-};
+}
 
-export default RadioButton;
+
 
 function LoginApp () {
 
@@ -37,7 +37,7 @@ function LoginApp () {
                 
                 <Card.Divider/>
                 <Date></Date>
-                <RadioButton></RadioButton>
+                <Survey></Survey>
             </>
                 
                 
