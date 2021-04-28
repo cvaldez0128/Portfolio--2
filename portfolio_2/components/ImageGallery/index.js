@@ -7,7 +7,13 @@ export default class ImageGallery extends React.component {
 
     state = {
         modalVisible: false,
-        modalImage: require('./img/OffCentered Logo.jpg')
+        modalImage: require('./img/OffCentered Logo.jpg'),
+        images: [
+            require('./OffCentered Logo.jpg'),
+            require('./img/Fight.jpeg'),
+            require('./img/Holding hands.png'),
+            require('./img.Tutorial 5.jpg'),
+        ]
     }
 
     render() {
