@@ -3,9 +3,11 @@ import { StyleSheet, View, Text, RadioButton } from 'react-native';
 import { Card } from 'react-native-elements';
 
 export default class Date extends React.Component {
+    const [checked, setChecked] = React.useState('first');
     constructor(props) {
         super(props)
     }
+
 
     render() {
         return (
