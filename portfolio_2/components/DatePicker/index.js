@@ -27,8 +27,14 @@ export default class Date extends React.Component {
         return (
             <>
 
-                
-    
+                {loggedIn ?
+                    <>
+                        <TestApp></TestApp>
+                    </>
+                : undefined}
+
+
+            {!loggedIn ?
                <Card>
                    <SafeAreaView style={styles.container}>
                        <Text style={styles.header}>THE NEXT COMPONENT IS PASSWORD PROTECTED</Text>
@@ -45,13 +51,14 @@ export default class Date extends React.Component {
                             ref={passRef}
                             placeholder="Did you guess the code word?"
                             secureTextEntry={true}
-                        ></TextInput>
+                            ></TextInput>
                         <Button 
                             onPress={access}
                             title="Enter"
-                        />
+                            />
                    </SafeAreaView>
                </Card>
+            : undefined}
             </>
         );
     }
