@@ -17,7 +17,12 @@ export default class ImageGallery extends React.component {
     }
 
     setModalVisible(visible, imageKey) {
-        this.
+        this.setState({ modalImage: this.state.images[imageKey] });
+        this.setState({ modalVisible: visible });
+    }
+
+    getImage() {
+        
     }
 
     render() {
