@@ -80,6 +80,7 @@ export default function passWord() {
                                 <Card.Divider/>
                                 <TextInput
                                     style={styles.textInput}
+                                    onKeyPress={(event) => this.handleKeyPress(event)}
                                     ref={codeRef}
                                     placeholder="DID YOU GUESS THE CODE?"
                                     secureTextEntry={true}
