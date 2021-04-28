@@ -15,9 +15,8 @@ export function VideoPlayer () {
                 ref={video}
                 style={styles.video}
                 source={{
-                url: 'https://students.cah.ucf.edu/~ch869274/dig3716c/Life%20Goes%20On%20-%20Lyrics/img/Life%20Goes%20On%20-%20Lyrics.mp4',
+                uri: 'http://d23dyxeqlo5psv.cloudfront.net/big_buck_bunny.mp4',
                 }}
-                type="video/mp4"
                 useNativeControls
                 resizeMode="contain"
                 isLooping
