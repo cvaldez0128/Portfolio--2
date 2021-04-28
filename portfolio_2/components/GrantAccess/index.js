@@ -15,7 +15,7 @@ export function VideoPlayer () {
                 ref={video}
                 style={styles.video}
                 source={{
-                uri: 'http://d23dyxeqlo5psv.cloudfront.net/big_buck_bunny.mp4',
+                uri: 'https://www.youtube.com/watch?v=nQ-xg5F4fbU',
                 }}
                 useNativeControls
                 resizeMode="contain"
