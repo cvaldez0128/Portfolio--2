@@ -59,8 +59,14 @@ export default function passWord() {
                                 <Text style={styles.text}>
                                     One word, all lower case.
                                 </Text>
-                                
-                                <TextInput></TextInput>
+
+                                <Card.Divider/>
+                                <TextInput
+                                    style={styles.textInput}
+                                    ref={codeRef}
+                                    placeholder="DID YOU GUESS THE CODE?"
+                                    secureTextEntry={true}
+                                ></TextInput>
                             </SafeAreaView>
                         </Card>
                     </>
