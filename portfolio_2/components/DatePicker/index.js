@@ -23,7 +23,7 @@ export default class Date extends React.Component {
                         <Text style={styles.quiz}>SHORT QUIZ</Text>
                         <Card.Divider/>
                         <Text style={styles.text}>Pick a fruit: Banana, Strawberry, Blueberry, Apple</Text>
-                        <Text><input type></input></Text>
+                        <Text><input type="text" id="fruit"></input></Text>
                         <Button type="submit" title="Submit" onPress={fruits}></Button>
                         <Text><p id="fruit"></p></Text>
                     </SafeAreaView>
