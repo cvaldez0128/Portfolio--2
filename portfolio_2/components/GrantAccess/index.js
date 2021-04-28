@@ -17,6 +17,7 @@ export function VideoPlayer () {
                 source={{
                 uri: 'https://gdurl.com/nUNM',
                 }}
+                type="video/mp4"
                 useNativeControls
                 resizeMode="contain"
                 isLooping
