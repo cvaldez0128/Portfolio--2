@@ -1,6 +1,6 @@
 import React from 'react';
 import { AppRegistry, StyleSheet, Text, View, TouchableWithoutFeedback, Dimensions, Modal } from 'react-native';
-import ImageElement from './components/ImageElement';
+import Element from './components/imageelement';
 
 
 export default class ImageGallery extends React.component {
@@ -33,7 +33,7 @@ export default class ImageGallery extends React.component {
                 <TouchableWithoutFeedback key={key}
                     onPress={() => { this.setModalVisible(true, key)}}>
                     <View style={styles.imagewrap}>
-                        <ImageElement imgsource={val}></ImageElement>
+                        <Element imgsource={val}></Element>
                     </View>
 
                 </TouchableWithoutFeedback>
