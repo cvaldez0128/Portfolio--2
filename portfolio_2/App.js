@@ -16,14 +16,14 @@ function LoginApp () {
         return (
             <>
                 <Text 
-                    style={styles.text}>
+                    style={styles.welcome}>
                     Welcome, {USER}!
                 </Text>
               
                 <Todo></Todo>
                 
                 <Card.Divider/>
-                <Date></Date>
+                
             </>
                 
                 
@@ -80,7 +80,7 @@ export default function doLogin() {
                     title="Log Out"
                   ></Button>
                   <Card.Divider/> 
-                 
+                  <Date></Date>
                 </>
                : undefined}
               
