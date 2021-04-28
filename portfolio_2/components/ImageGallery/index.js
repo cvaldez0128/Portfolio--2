@@ -12,7 +12,7 @@ export default class ImageGallery extends React.component {
             require('./img/OffCentered Logo.jpg'),
             require('./img/Fight.jpeg'),
             require('./img/Holding hands.png'),
-            require('./img.Tutorial 5.jpg'),
+            require('./img/Tutorial 5.jpg'),
         ]
     }
 
