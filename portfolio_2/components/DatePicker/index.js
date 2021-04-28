@@ -4,12 +4,12 @@ import { Card } from 'react-native-elements';
 
 export default class Date extends React.Component {
 
-  function validateData() {
-      document.myform.addEventListener("submit", processForm, false);
-  }
-
-  
     render() {
+    
+    
+        function validateData() {
+            document.myform.addEventListener("submit", processForm, false);
+        }
         return (
             <>
     
