@@ -10,14 +10,16 @@ export default class Date extends React.Component {
     render() {
         return (
             <>
-                <SafeAreaView style={[styles.container, styles.text]}>
+                <Card>
 
-                    <Card>
+                    <SafeAreaView style={[styles.container, styles.text]}>
                         <Text>This is a test</Text>
-                    </Card>
+                    </SafeAreaView>
+                </Card>
 
-                </SafeAreaView>
             </>
+                    
+                  
         );
     }
 }
