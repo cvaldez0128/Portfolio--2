@@ -24,6 +24,7 @@ export default class Date extends React.Component {
                 console.log("Access granted")
             }
         }
+        
         return (
             <>
 
