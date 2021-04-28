@@ -1,24 +1,17 @@
 import React from 'react';
-import { StyleSheet, View, Text, RadioButton } from 'react-native';
+import { StyleSheet, View, Text } from 'react-native';
 import { Card } from 'react-native-elements';
 
 export default class Date extends React.Component {
-    const [checked, setChecked] = React.useState('first');
     constructor(props) {
         super(props)
     }
-
 
     render() {
         return (
             <>
                 <Card>
                     <Text>This is a test</Text>
-                    <RadioButton
-                        value="first"
-                        status={ checked === 'first' ? 'checked' : 'unchecked' }
-                        onPress={() => setChecked('first')}
-                    ></RadioButton>
                 </Card>
             </>
         );
