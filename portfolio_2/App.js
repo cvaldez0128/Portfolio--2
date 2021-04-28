@@ -36,7 +36,7 @@ function LoginApp () {
                 
                 <Card.Divider/>
                 <Date></Date>
-                
+                <RadioButton></RadioButton>
             </>
                 
                 
