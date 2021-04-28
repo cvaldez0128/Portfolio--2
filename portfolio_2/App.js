@@ -67,7 +67,8 @@ export default function doLogin() {
                   <Button
                     onPress={logout}
                     title="Log Out"
-                  ></Button> 
+                  ></Button>
+                  <Card.Divider/> 
                   <Date></Date>
                 </>
                : undefined}
