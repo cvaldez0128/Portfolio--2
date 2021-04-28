@@ -17,7 +17,7 @@ export default class Date extends React.Component {
 
                <Card>
                    <SafeAreaView style={styles.container}>
-                       <Text style={styles.header}>Please enter the provided information.</Text>
+                       <Text style={styles.header}>PLEASE ENTER THE PROVIDED INFORMATION:</Text>
                    </SafeAreaView>
                </Card>
               
