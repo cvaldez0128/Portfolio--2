@@ -22,6 +22,7 @@ export default class Date extends React.Component {
                        <Text style={styles.text}>NAME: KIM NAMJOON</Text>
                        <Text style={styles.text}>AGE: 26</Text>
                        <Text style={styles.text}>TITLE: ARTIST</Text>
+                       <Card.Divider/>
                    </SafeAreaView>
                </Card>
               
