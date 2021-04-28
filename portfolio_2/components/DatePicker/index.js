@@ -4,9 +4,12 @@ import { Card } from 'react-native-elements';
 
 
 
-export default function App() {
-    return (
-        
+export default class Date extends React.Component {
+  
+    render() {
+        return (
+            <>
+    
                <Card>
                    <SafeAreaView style={styles.container}>
                        <Text style={styles.header}>PLEASE ENTER THE PROVIDED INFORMATION:</Text>
@@ -14,12 +17,17 @@ export default function App() {
                        <Text style={styles.text}>NAME: KIM NAMJOON</Text>
                        <Text style={styles.text}>AGE: 26</Text>
                        <Text style={styles.text}>TITLE: ARTIST</Text>
-                      
+                       
+                       <Card.Divider/>
                    </SafeAreaView>
                </Card>
               
-    )
-}
+            </>
+                    
+                  
+        );
+    }
+    }
         
       
     
