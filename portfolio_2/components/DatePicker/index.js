@@ -6,7 +6,9 @@ export default class Date extends React.Component {
     constructor(props) {
         super(props)
         let fruits = () => {
-            if 
+            if (fruit.value == "Banana") {
+                document.getElementById('fruit').innerHTML = "You chose Bananas!";
+            }
         }
     }
 
