@@ -8,7 +8,9 @@ export function VideoPlayer () {
     return (
         <>
             <Text>This is a test</Text>
-            <Video></Video>
+            <Video
+                source={{r}}
+            ></Video>
           
         </>
     )
