@@ -22,7 +22,7 @@ export default class ImageGallery extends React.component {
     }
 
     getImage() {
-        
+        return this.state.modalImage;
     }
 
     render() {
