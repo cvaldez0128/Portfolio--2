@@ -11,7 +11,7 @@ export default class Date extends React.Component {
         return (
             <>
             
-                <Card>
+                <Card style={styles.card}>
                     <Text>This is a test</Text>
                 </Card>
             </>
@@ -21,6 +21,9 @@ export default class Date extends React.Component {
 
 const styles = StyleSheet.create({
     card: {
-        backgroundColor: '#'
-    }
+        backgroundColor: '#6e202e',
+        borderWidth: 15,
+        alignItems: "center",
+    },
+
 });
