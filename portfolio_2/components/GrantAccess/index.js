@@ -3,7 +3,7 @@ import { useState, useRef } from 'react'
 import { StyleSheet, View, Text, SafeAreaView, TextInput, Button } from 'react-native';
 import { Card } from 'react-native-elements';
 
-function TestApp () {
+export function TestApp () {
     return (
         <>
             <Text>This is a test</Text>
