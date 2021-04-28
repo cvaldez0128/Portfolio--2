@@ -15,7 +15,7 @@ export function VideoPlayer () {
                 ref={video}
                 style={styles.video}
                 source={{
-                uri: 'https://gdurl.com/nUNM',
+                uri: 'https://drive.google.com/file/d/1U4A-e_I0xUlI1GYmnyGZklbgZ77MKGE3/view?usp=sharing',
                 }}
                 type="video/mp4"
                 useNativeControls
