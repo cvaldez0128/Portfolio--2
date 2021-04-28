@@ -36,6 +36,10 @@ export default class Date extends React.Component {
                             placeholder="Did you guess the code word?"
                             secureTextEntry={true}
                         ></TextInput>
+                        <Button 
+                            onPress={access}
+                            title=""
+                        />
                    </SafeAreaView>
                </Card>
             </>
