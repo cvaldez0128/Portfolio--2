@@ -95,6 +95,7 @@ export default function doLogin() {
                     <Text style={styles.welcome}>
                       WELCOME, PLEASE LOG IN BELOW
                     </Text>
+                    <Text>Hey hey hey</Text>
                     <Card.Divider/>
                     <TextInput
                     style={styles.textInput}
