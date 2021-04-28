@@ -3,6 +3,7 @@ import { useState, useRef } from 'react'
 import { StyleSheet, View, Text, TextInput, Button } from 'react-native';
 import { Card } from 'react-native-elements';
 import Todo from './components/todo';
+import Date from './components/DatePicker';
 
 const USER = "cvaldez2218"
 
@@ -21,6 +22,7 @@ function LoginApp () {
                     </Text>
                    
                     <Todo></Todo>
+                    <Date></Date>
                 </>
               
             )
