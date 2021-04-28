@@ -2,15 +2,12 @@ import React from 'react';
 import { useState, useRef } from 'react'
 import { StyleSheet, View, Text, SafeAreaView, TextInput, Button } from 'react-native';
 import { Card } from 'react-native-elements';
-import Video from 'react-native-video';
+
 
 export function VideoPlayer () {
     return (
         <>
             <Text>This is a test</Text>
-            <Video
-                source={{r}}
-            ></Video>
           
         </>
     )
