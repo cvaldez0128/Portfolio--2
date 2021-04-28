@@ -28,7 +28,9 @@ export default class ImageGallery extends React.component {
     render() {
 
         let images = this.state.images.map((val, key) => {
-            return <TouchableWithoutFeedback key
+            return <TouchableWithoutFeedback key={key}
+                        onPress={() =>}
+                    ></TouchableWithoutFeedback>
         });
 
         return (
