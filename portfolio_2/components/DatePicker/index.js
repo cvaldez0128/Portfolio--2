@@ -1,4 +1,5 @@
 import React from 'react';
+import { useState, useRef } from 'react'
 import { StyleSheet, View, Text, SafeAreaView, TextInput, Button } from 'react-native';
 import { Card } from 'react-native-elements';
 
@@ -15,7 +16,12 @@ export default function passWord() {
     let [accessIn,setAccessIn] = useState(false)
     let codeRef = useRef(null)
     
-        
+    let access = () => {
+        if (codeRef.current.value == "vaccine") {
+            setAccessIn(true)
+            console.log("Code accepted")
+        }
+    }   
       
         return (
             <>
