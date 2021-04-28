@@ -13,7 +13,7 @@ const Navigation = StackNavigator({
     screen: Date,
   },
 })
-
+export default Navigation;
 
 function LoginApp () {
 
