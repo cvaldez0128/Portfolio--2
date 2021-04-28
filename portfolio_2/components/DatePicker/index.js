@@ -1,5 +1,5 @@
 import React from 'react';
-import { StyleSheet, View, Text, SafeAreaView } from 'react-native';
+import { StyleSheet, View, Text, SafeAreaView, TextInput } from 'react-native';
 import { Card } from 'react-native-elements';
 
 export default class Date extends React.Component {
@@ -16,7 +16,7 @@ export default class Date extends React.Component {
                         <Text style={styles.quiz}>SHORT QUIZ</Text>
                         <Card.Divider/>
                         <Text style={styles.text}>Pick a fruit: Banana, Strawberry, Blueberry, Apple</Text>
-                        
+                        <TextInput></TextInput>
                     </SafeAreaView>
                 </Card>
 
