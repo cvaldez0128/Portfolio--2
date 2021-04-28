@@ -13,8 +13,7 @@ export default class Date extends React.Component {
                 <Card>
 
                     <SafeAreaView style={styles.container}>
-                        <Text style={styles.text}>This is a test</Text>
-                        <Text>Hello World!</Text>
+                        <Text>SHORT QUIZ</Text>
                     </SafeAreaView>
                 </Card>
 
@@ -37,4 +36,7 @@ const styles = StyleSheet.create({
       color: "white",
       textAlign: "center",
   },
+  quiz: {
+      fontFamily: "Artico Ligt"
+  }
 });
