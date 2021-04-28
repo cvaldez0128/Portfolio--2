@@ -8,8 +8,10 @@ import Date from './components/DatePicker';
 const USER = "cvaldez2218"
 
 
-function LoginApp () {
+this.state = {currentScreen: LOGINSCREEN, selectedItem: undefined}
 
+function LoginApp () {
+   
     
 
    
@@ -30,7 +32,7 @@ function LoginApp () {
 
 export default function doLogin() {
 
-  
+
 
   let [loggedIn,setLoggedIn] = useState(false)
   let passRef = useRef(null)
