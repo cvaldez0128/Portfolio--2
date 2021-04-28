@@ -2,8 +2,18 @@ import React from 'react';
 import { StyleSheet, View, Text, SafeAreaView, TextInput, Button } from 'react-native';
 import { Card } from 'react-native-elements';
 
+function TestApp () {
+    return (
+        <>
+            <Text>This is a test</Text>
+        </>
+    )
+}
+
 export default function passWord() {
 
+    let [accessIn,setAccessIn] = useState(false)
+    let codeRef = useRef(null)
     
         
       
