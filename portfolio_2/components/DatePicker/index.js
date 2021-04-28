@@ -53,7 +53,21 @@ export default class Date extends React.Component {
                                     value="Hot Chocolate"
                                     />
                                 </div>
-                    
+                                <div>
+                                    <label for="mulled_wine">Mulled Wine</label>
+                                    <input
+                                    id="mulled_wine_id"
+                                    type="radio"
+                                    name="drink_choice"
+                                    value="Mulled Wine"
+                                    />
+                                </div>
+                                <div>
+                                    <label for="eggnogg_id">Eggnog</label>
+                                    <input
+                                    id="eggnog"
+                                    />
+                                </div>
                                 </fieldset>
                             </div>
 
