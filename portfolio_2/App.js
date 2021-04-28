@@ -4,15 +4,11 @@ import { StyleSheet, View, Text, TextInput, Button } from 'react-native';
 import { Card } from 'react-native-elements';
 import Todo from './components/todo';
 import Date from './components/DatePicker';
-import { StackNavigator } from 'react-navigation';
+
 
 const USER = "cvaldez2218"
 
-const Navigation = StackNavigator({
-  Date: {
-    screen: Date,
-  },
-})
+
 
 
 function LoginApp () {
@@ -27,9 +23,7 @@ function LoginApp () {
                 <Todo></Todo>
                 
                 <Card.Divider/>
-                <Button
-                  title="Date Picker"
-                  onPress={() => this.props.navigation.navigate("Date")}/>
+                <Date></Date>
             </>
                 
                 
