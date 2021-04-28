@@ -52,6 +52,7 @@ export default function passWord() {
 
                     <>
                         <VideoPlayer></VideoPlayer>
+                        <Card.Divider/>
                         <Button
                             title="Exit"
                             onPress={back}
