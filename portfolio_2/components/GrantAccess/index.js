@@ -7,6 +7,11 @@ function TestApp () {
     return (
         <>
             <Text>This is a test</Text>
+            <Card.Divider/>
+            <Button
+                title="Exit"
+                onPress={back}
+            />
         </>
     )
 }
@@ -23,8 +28,8 @@ export default function passWord() {
         }
     } 
     
-    let return = () => {
-        
+    let back = () => {
+        setAccessIn(false)
     }
       
         return (
@@ -34,6 +39,7 @@ export default function passWord() {
 
                     <>
                         <TestApp></TestApp>
+
                     </>
                 : undefined}
 
