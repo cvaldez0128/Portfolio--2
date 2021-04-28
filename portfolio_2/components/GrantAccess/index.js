@@ -18,13 +18,7 @@ export default function passWord() {
     let [accessIn,setAccessIn] = useState(false)
     let codeRef = useRef(null)
 
-    handleKeyPress = (event) => {
-    if (event.key == "Enter") {
-      this.access()
-     
-    }
-  }
-    
+  
     let access = () => {
         if (codeRef.current.value == "vaccine") {
             setAccessIn(true)
@@ -80,7 +74,7 @@ export default function passWord() {
                                 <Card.Divider/>
                                 <TextInput
                                     style={styles.textInput}
-                                    onKeyPress={(event) => this.handleKeyPress(event)}
+                                    
                                     ref={codeRef}
                                     placeholder="DID YOU GUESS THE CODE?"
                                     secureTextEntry={true}
