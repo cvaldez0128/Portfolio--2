@@ -32,11 +32,11 @@ export default class ImageGallery extends React.component {
                 <>
                 <TouchableWithoutFeedback key={key}
                     onPress={() => { this.setModalVisible(true, key)}}>
-                </TouchableWithoutFeedback>
+                    <View style={styles.imagewrap}>
+                        <ImageElement imgsource={val}></ImageElement>
+                    </View>
 
-                <View style={styles.imagewrap}>
-                    <ImageElement imgsource={val}></ImageElement>
-                </View>
+                </TouchableWithoutFeedback>
                 </>
             );
 
