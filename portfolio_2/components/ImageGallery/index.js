@@ -3,7 +3,7 @@ import { AppRegistry, StyleSheet, Text, View, TouchableWithoutFeedback, Dimensio
 import ImageElement from './components/ImageElement';
 
 
-export default class ImageGallery extends Component {
+export default class ImageGallery extends React.component {
 
     state = {
         modalVisible: false,
