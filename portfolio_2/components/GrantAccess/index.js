@@ -8,7 +8,7 @@ export function VideoPlayer () {
     const video = React.useRef(null);
     const [Status, setStatus] = React.useState({});
 
-    const bangtan = "https://youtu.be/6MkXW9AbG_M"
+    const bangtan = "https://drive.google.com/file/d/1U4A-e_I0xUlI1GYmnyGZklbgZ77MKGE3/view?usp=sharing"
    return (
        <Card>
 
