@@ -13,6 +13,13 @@ export default class Date extends React.Component {
 
         function processForm(event) {
             event.preventDefault();
+
+            var radio_buttons = document.myform.elements["survey_choice"];
+            for(var x = 0; x < radio_buttons.length; x++) {
+                if (radio_buttons[x].checked) {
+                    doc
+                }
+            }
         }
 
         window.addEventListener("load", validateData, false);
