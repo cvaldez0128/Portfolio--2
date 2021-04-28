@@ -18,9 +18,10 @@ export default class Date extends React.Component {
                <Card>
                    <SafeAreaView style={styles.container}>
                        <Text style={styles.header}>PLEASE ENTER THE PROVIDED INFORMATION:</Text>
-                       <Text>NAME: KIM NAMJOON</Text>
-                       <Text>AGE: 26</Text>
-                       <Text>TITLE: ARTIST</Text>
+                       <Card.Divider/>
+                       <Text style={styles.text}>NAME: KIM NAMJOON</Text>
+                       <Text style={styles.text}>AGE: 26</Text>
+                       <Text style={styles.text}>TITLE: ARTIST</Text>
                    </SafeAreaView>
                </Card>
               
