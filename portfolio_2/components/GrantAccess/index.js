@@ -7,11 +7,8 @@ function TestApp () {
     return (
         <>
             <Text>This is a test</Text>
-            <Card.Divider/>
-            <Button
-                title="Exit"
-                onPress={back}
-            />
+           
+          
         </>
     )
 }
@@ -39,7 +36,10 @@ export default function passWord() {
 
                     <>
                         <TestApp></TestApp>
-
+                        <Button
+                            title="Exit"
+                            onPress={back}
+                        />
                     </>
                 : undefined}
 
