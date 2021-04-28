@@ -16,6 +16,10 @@ export default class ImageGallery extends React.component {
         ]
     }
 
+    setModalVisible(visible, imageKey) {
+        this.
+    }
+
     render() {
         return (
             <>
