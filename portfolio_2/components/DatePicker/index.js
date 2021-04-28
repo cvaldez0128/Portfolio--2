@@ -12,7 +12,7 @@ export default class Date extends React.Component {
     
                <Card>
                    <SafeAreaView style={styles.container}>
-                      <Text>SURVEY</Text>
+                      <Text style={styles.header}>SURVEY</Text>
                     <Card.Divider/>
                    </SafeAreaView>
                </Card>
