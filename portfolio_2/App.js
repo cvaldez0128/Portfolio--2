@@ -80,7 +80,7 @@ export default function doLogin() {
                     title="Log Out"
                   ></Button>
                   <Card.Divider/> 
-                  <Date></Date>
+                  
                 </>
                : undefined}
               
