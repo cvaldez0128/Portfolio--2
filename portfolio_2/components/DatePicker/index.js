@@ -3,6 +3,14 @@ import { useState, useRef } from 'react'
 import { StyleSheet, Text, SafeAreaView, TextInput, Button } from 'react-native';
 import { Card } from 'react-native-elements';
 
+function TestApp () {
+    return (
+        <>
+            <Text>This is a test</Text>
+        </>
+    )
+}
+
 export default class Date extends React.Component {
 
     render() {
@@ -18,6 +26,8 @@ export default class Date extends React.Component {
         }
         return (
             <>
+
+                
     
                <Card>
                    <SafeAreaView style={styles.container}>
