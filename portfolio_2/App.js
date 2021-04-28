@@ -4,6 +4,7 @@ import { StyleSheet, View, Text, TextInput, Button } from 'react-native';
 import { Card } from 'react-native-elements';
 import Todo from './components/todo';
 import Date from './components/DatePicker';
+import { render } from 'react-dom';
 
 const USER = "cvaldez2218"
 const LOGINSCREEN = "loginscreen"
@@ -12,24 +13,28 @@ const DATE = "date"
 this.state = {currentScreen: LOGINSCREEN, selectedItem: undefined}
 
 function LoginApp () {
-   
+  
+        return (
+            <>
+                <Text 
+                    style={styles.text}>
+                    <h1>Welcome, {USER}!</h1>
+                </Text>
+              
+                <Todo></Todo>
+                
+            </>
+          
+        )
+
+      }
     
 
-   
-            return (
-              
-                <>
-                    <Text 
-                        style={styles.text}>
-                        <h1>Welcome, {USER}!</h1>
-                    </Text>
-                   
-                    <Todo></Todo>
-                    
-                </>
-              
-            );
-}
+         
+  
+  
+  
+  
 
 export default function doLogin() {
 
