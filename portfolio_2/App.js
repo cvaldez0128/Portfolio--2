@@ -8,7 +8,11 @@ import { StackNavigator } from 'react-navigation';
 
 const USER = "cvaldez2218"
 
-
+const Navigation = StackNavigator({
+  Date: {
+    screen: 'Date Picker',
+  }
+})
 
 
 function LoginApp () {
