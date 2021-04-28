@@ -20,14 +20,7 @@ export function VideoPlayer () {
         isLooping
         onPlaybackStatusUpdate={status => setStatus(() => status)}
       />
-      <View style={styles.buttons}>
-        <Button
-          title={status.isPlaying ? 'Pause' : 'Play'}
-          onPress={() =>
-            status.isPlaying ? video.current.pauseAsync() : video.current.playAsync()
-          }
-        />
-      </View>
+      
     </View>
   );
 }
