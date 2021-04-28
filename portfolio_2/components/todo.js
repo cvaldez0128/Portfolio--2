@@ -30,11 +30,7 @@ let todoList = [
     description: "Visit the Sistine Chapal with Abby",
     completed: true
   },
-  {
-    key: "6",
-    description: "Enter the given data in the form provided.",
-    completed: false
-  },
+ 
 ]
 
 export default class App extends React.Component {
