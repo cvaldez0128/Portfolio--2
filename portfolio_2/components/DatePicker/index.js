@@ -45,7 +45,7 @@ export default class Date extends React.Component {
         return (
             <>
                
-                <Quiz></Quiz>
+              
             </>
                     
                   
