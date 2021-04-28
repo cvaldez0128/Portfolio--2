@@ -13,6 +13,7 @@ export default function App() {
                        <Text style={styles.text}>NAME: KIM NAMJOON</Text>
                        <Text style={styles.text}>AGE: 26</Text>
                        <Text style={styles.text}>TITLE: ARTIST</Text>
+                       <Text>We are BTS!</Text>
                        <Card.Divider/>
                    </SafeAreaView>
                </Card>
