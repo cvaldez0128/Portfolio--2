@@ -7,19 +7,12 @@ import Date from './components/DatePicker';
 import { render } from 'react-dom';
 
 const USER = "cvaldez2218"
-const LOGINSCREEN = "loginscreen"
-const DATE = "date"
 
-this.state = {currentScreen: LOGINSCREEN, selectedItem: undefined}
+
+
 
 function LoginApp () {
-  let objects = [
-      {objName: "Date Picker"},
-      
-  ]
-  switch (this.state.currentScreen) {
-    
-  }
+
         return (
             <>
                 <Text 
@@ -35,7 +28,7 @@ function LoginApp () {
           
         )
 
-      }
+}
     
 
          
