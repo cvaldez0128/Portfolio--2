@@ -30,6 +30,16 @@ let todoList = [
     description: "Visit the Sistine Chapal with Abby",
     completed: true
   },
+  {
+    key: "6",
+    description: "Guess the secret code and enter it",
+    completed: false
+  },
+  {
+    key: "7",
+    description: "Watch the video (if you want to)",
+    completed: false
+  },
  
 ]
 
