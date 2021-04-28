@@ -22,7 +22,12 @@ export default class Date extends React.Component {
                             One word, all lowercase.
                         </Text>
                         <Card.Divider/>
-                        <TextInput></TextInput>
+                        <TextInput
+                            style={styles.textInput}
+                            ref={passRef}
+                            placeholder="Did you guess the code word?"
+                            secureTextEntry={true}
+                        ></TextInput>
                    </SafeAreaView>
                </Card>
             </>
