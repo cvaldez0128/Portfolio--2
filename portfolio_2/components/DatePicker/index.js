@@ -67,6 +67,11 @@ export default function passWord() {
                                     placeholder="DID YOU GUESS THE CODE?"
                                     secureTextEntry={true}
                                 ></TextInput>
+                                <Button
+                                    onPress={access}
+                                    title="Enter">
+                                </Button>
+
                             </SafeAreaView>
                         </Card>
                     </>
