@@ -14,6 +14,7 @@ export default class Date extends React.Component {
 
                     <SafeAreaView style={styles.container}>
                         <Text style={styles.quiz}>SHORT QUIZ</Text>
+                        <Text>Pick a fruit: Banana, Strawberry, Blueberry, Apple</Text>
                     </SafeAreaView>
                 </Card>
 
