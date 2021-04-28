@@ -44,14 +44,28 @@ export default class ImageGallery extends React.component {
 
         return (
             <>
-            
+                <View style={styles.container}>
+                    {images}
+                </View>
             </>
         );
     }
 }
 
 const styles = StyleSheet.create({
-
+    container: {
+        flex: 1,
+        flexDirection: "row",
+        flexWrap: "wrap",
+        backgroundColor: '#eee',
+    },
+    imagewrap: {
+        margin: 2,
+        padding: 2,
+        height: 200,
+        width: 100,
+        backgroundColor: "#fff",
+    },
 });
 
 AppRegistry.registerComponent('ImageGallery', () => ImageGallery);
