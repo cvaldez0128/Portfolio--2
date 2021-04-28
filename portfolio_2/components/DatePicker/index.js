@@ -42,7 +42,22 @@ export default function passWord() {
                                 <Text style={styles.text}>
                                     Hint: 
                                     This is something that is entirely optional.
+                                </Text>
 
+                                <Text style={styles.text}>
+                                    Some people are waiting to get it.
+                                </Text>
+
+                                <Text style={styles.text}>
+                                    Others have already gotten it.
+                                </Text>
+
+                                <Text style={styles.text}>
+                                    It will help stop the spread.
+                                </Text>
+
+                                <Text style={styles.text}>
+                                    One word, all lower case.
                                 </Text>
                             </SafeAreaView>
                         </Card>
