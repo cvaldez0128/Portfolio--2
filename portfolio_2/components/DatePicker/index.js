@@ -12,8 +12,8 @@ export default class Date extends React.Component {
             <>
                 <Card>
 
-                    <SafeAreaView style={[styles.container, styles.text]}>
-                        <Text>This is a test</Text>
+                    <SafeAreaView style={styles.container}>
+                        <Text styles={styles.text}>This is a test</Text>
                     </SafeAreaView>
                 </Card>
 
