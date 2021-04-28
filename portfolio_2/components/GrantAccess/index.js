@@ -2,9 +2,14 @@ import React from 'react';
 import { useState, useRef } from 'react'
 import { StyleSheet, View, Text, SafeAreaView, TextInput, Button } from 'react-native';
 import { Card } from 'react-native-elements';
-import Video from './components/VideoPlayer';
 
-
+function TestApp () {
+    return (
+        <>
+            <Text>This is a test</Text>
+        </>
+    )
+}
 
 export default function passWord() {
 
@@ -24,7 +29,7 @@ export default function passWord() {
                 {accessIn ?
 
                     <>
-                        <Video></Video>
+                        <TestApp></TestApp>
                     </>
                 : undefined}
 
