@@ -37,7 +37,7 @@ export default function passWord() {
                     <>
                         <Card>
                             <SafeAreaView style={styles.container}>
-                                <Text style={styles.header}>YOU WILL NEED A CODE TO ACCESS THE NEXT COMPONENT</Text>
+                                <Text style={styles.header}>YOU WILL NEED A CODE TO ACCESS THE NEXT COMPONENTS</Text>
                                 <Card.Divider/>
                                 <Text style={styles.text}>
                                     Hint: 
