@@ -28,11 +28,15 @@ export default class ImageGallery extends React.component {
     render() {
 
         let images = this.state.images.map((val, key) => {
-            return <TouchableWithoutFeedback key={key}
-                        onPress={() => { this.setModalVisible(true, key)}}>
-                    </TouchableWithoutFeedback>
+            return (
+                <>
+                <TouchableWithoutFeedback key={key}
+                    onPress={() => { this.setModalVisible(true, key)}}>
+                </TouchableWithoutFeedback>
 
-                    <View></View>
+                <View style={styles.image}></View>
+                </>
+            );
 
         });
 
