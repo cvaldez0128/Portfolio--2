@@ -15,7 +15,9 @@ export default class Date extends React.Component {
         return (
             <>
 
-                <Text style={Styles.}
+                <Text style={styles.text}>
+                    This is a test
+                </Text>
               
             </>
                     
