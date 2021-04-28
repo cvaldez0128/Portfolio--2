@@ -17,7 +17,7 @@ export default class Date extends React.Component {
             var radio_buttons = document.myform.elements["survey_choice"];
             for(var x = 0; x < radio_buttons.length; x++) {
                 if (radio_buttons[x].checked) {
-                    document.getElementById()
+                    document.getElementById("survey").innerHTML = ("You chose: " + radio_buttons[x].value + "!");
                 }
             }
         }
