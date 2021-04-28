@@ -11,7 +11,10 @@ export default class Date extends React.Component {
         let passRef = useRef(null)
 
         let access = () => {
-            if (passRef.current.value == "vaccine")
+            if (passRef.current.value == "vaccine") {
+                setLoggedIn(true)
+                console.log("Access granted")
+            }
         }
         return (
             <>
