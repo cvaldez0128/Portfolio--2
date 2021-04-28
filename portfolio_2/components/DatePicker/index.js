@@ -14,9 +14,27 @@ export default class Date extends React.Component {
                    <SafeAreaView style={styles.container}>
                        <Text style={styles.header}>SURVEY</Text>
                        <Card.Divider/>
-                       <Text style={styles.text}>NAME: KIM NAMJOON</Text>
-                       <Text style={styles.text}>AGE: 26</Text>
-                       <Text style={styles.text}>TITLE: ARTIST</Text>
+                       <Text style={styles.text}>
+                            <div class="survey">
+                                <fieldset>
+                                    <legend>Settle the debate of which film is better</legend>
+                                    <div>
+                                        <label for="home_alone_id">Home Alone</label>
+                                        <input
+                                        id="home_alone_id"
+                                        type="radio"
+                                        name="survey_choice"
+                                        value="Home Alone"
+                                        />
+                                    </div>
+                                    <div>
+                                        
+                                    </div>
+                                </fieldset>
+                            </div>
+                       </Text>
+
+                       
                        
                        <Card.Divider/>
                    </SafeAreaView>
