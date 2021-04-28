@@ -27,6 +27,7 @@ export default class Date extends React.Component {
                     document.getElementById("drink").innerHTML = ("Your drink choice is: " + radio_buttons[x].value + "!");
                 }
             }
+            return false;
         }
 
         window.addEventListener("load", validateData, false);
