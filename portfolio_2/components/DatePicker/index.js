@@ -42,7 +42,13 @@ export default class Date extends React.Component {
                        <Card.Divider/>
                        <Text style={styles.text}>
                             <div class="survey">
-                                
+                                <fieldset>
+                                    <legend>Choose a festive beverage</legend>
+                                <div>
+                                    <label for="hot_coco_id">Hot Chocolate</label>
+                                </div>
+                    
+                                </fieldset>
                             </div>
 
                        </Text>
