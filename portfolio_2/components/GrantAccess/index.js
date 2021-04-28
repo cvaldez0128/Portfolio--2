@@ -8,7 +8,7 @@ export function VideoPlayer () {
     const video = React.useRef(null);
     const [Status, setStatus] = React.useState({});
 
-    const bangtan = "https://students.cah.ucf.edu/~ch869274/dig3716c/Life%20Goes%20On%20-%20Lyrics/img/Life%20Goes%20On%20-%20Lyrics.mp4"
+    const bangtan = "https://youtu.be/6MkXW9AbG_M"
    return (
        <Card>
 
