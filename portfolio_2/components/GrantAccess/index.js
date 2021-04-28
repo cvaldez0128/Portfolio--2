@@ -7,12 +7,29 @@ import { Video, AVPlaybackStatus } from 'expo-av';
 export function VideoPlayer () {
     const video = React.useRef(null);
     const [Status, setStatus] = React.useState({});
-    return (
-        <>
-            <Text>This is a test</Text>
-          
-        </>
-    )
+   return (
+    <View style={styles.container}>
+      <Video
+        ref={video}
+        style={styles.video}
+        source={{
+          uri: 'http://d23dyxeqlo5psv.cloudfront.net/big_buck_bunny.mp4',
+        }}
+        useNativeControls
+        resizeMode="contain"
+        isLooping
+        onPlaybackStatusUpdate={status => setStatus(() => status)}
+      />
+      <View style={styles.buttons}>
+        <Button
+          title={status.isPlaying ? 'Pause' : 'Play'}
+          onPress={() =>
+            status.isPlaying ? video.current.pauseAsync() : video.current.playAsync()
+          }
+        />
+      </View>
+    </View>
+  );
 }
 
 export default function passWord() {
