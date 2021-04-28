@@ -4,6 +4,12 @@ import ImageElement from './components/ImageElement';
 
 
 export default class ImageGallery extends React.component {
+
+    state = {
+        modalVisible: false,
+        modalImage: require('./img/')
+    }
+
     render() {
         return (
             <>
