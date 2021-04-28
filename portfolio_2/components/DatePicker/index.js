@@ -12,7 +12,7 @@ export default function passWord() {
     
                <Card>
                    <SafeAreaView style={styles.container}>
-                    >
+                    
                    </SafeAreaView>
                </Card>
             </>
