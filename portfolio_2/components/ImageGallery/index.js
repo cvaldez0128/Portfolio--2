@@ -34,7 +34,9 @@ export default class ImageGallery extends React.component {
                     onPress={() => { this.setModalVisible(true, key)}}>
                 </TouchableWithoutFeedback>
 
-                <View style={styles.image}></View>
+                <View style={styles.imagewrap}>
+                    <ImageElement imgsource={val}></ImageElement>
+                </View>
                 </>
             );
 
