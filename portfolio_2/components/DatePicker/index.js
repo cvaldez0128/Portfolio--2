@@ -25,7 +25,7 @@ export default class Date extends React.Component {
                         <Text style={styles.text}>Pick a fruit: Banana, Strawberry, Blueberry, Apple</Text>
                         <TextInput style={styles.textInput} type="text" id="fruit"></TextInput>
                         <Button type="submit" title="Submit" onPress={fruits}></Button>
-                        <Text></Text>
+                        <Text><p id="fruit"></p></Text>
                     </SafeAreaView>
                 </Card>
 
