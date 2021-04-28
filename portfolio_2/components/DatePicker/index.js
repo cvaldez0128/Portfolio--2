@@ -4,9 +4,13 @@ import { Card } from 'react-native-elements';
 
 
 
-export default function App() {
-    return (
-         <Card>
+export default class Date extends React.Component {
+  
+    render() {
+        return (
+            <>
+    
+               <Card>
                    <SafeAreaView style={styles.container}>
                        <Text style={styles.header}>PLEASE ENTER THE PROVIDED INFORMATION:</Text>
                        <Card.Divider/>
@@ -17,8 +21,20 @@ export default function App() {
                        <Card.Divider/>
                    </SafeAreaView>
                </Card>
-    );
-}
+              
+            </>
+                    
+                  
+        );
+    }
+    }
+        
+      
+    
+
+        
+
+
 
 const styles = StyleSheet.create({
     container: {
