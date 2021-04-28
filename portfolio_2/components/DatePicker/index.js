@@ -10,6 +10,7 @@ export default class Date extends React.Component {
     render() {
         return (
             <>
+            
                 <Card>
                     <Text>This is a test</Text>
                 </Card>
