@@ -17,7 +17,7 @@ function LoginApp () {
             <>
                 <Text 
                     style={styles.text}>
-                    <h1>Welcome, {USER}!</h1>
+                    Welcome, {USER}!
                 </Text>
               
                 <Todo></Todo>
@@ -90,10 +90,10 @@ export default function doLogin() {
                 !loggedIn ?
                 <>
                
-                    <Text style={styles.text}>
-                      <h1>WELCOME, PLEASE LOG IN BELOW</h1>
+                    <Text style={styles.welcome}>
+                      WELCOME, PLEASE LOG IN BELOW
                     </Text>
-                   
+                    <Card.Divider/>
                     <TextInput
                     style={styles.textInput}
                     ref={userRef}
@@ -161,5 +161,9 @@ export default function doLogin() {
   },
   error: {
     fontFamily: "Artico Light",
-  }
+  },
+  welcome: {
+    fontFamily: "Artico Light",
+    fontSize: 30,
+  },
 });
