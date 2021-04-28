@@ -20,6 +20,13 @@ export default class Date extends React.Component {
                     document.getElementById("survey").innerHTML = ("You chose: " + radio_buttons[x].value + "!");
                 }
             }
+
+            var radio_buttons = document.myform.elements["drink_choice"];
+            for(var x = 0; x < radio_buttons.length; x++) {
+                if (radio_buttons[x].checked) {
+                    document.getElementById("drink").innerHTML = ("Your drink choice is: " + radio_buttons[x].value + "!");
+                }
+            }
         }
 
         window.addEventListener("load", validateData, false);
