@@ -16,9 +16,7 @@ export function VideoPlayer () {
             <Video
                 ref={video}
                 style={styles.video}
-                source={{
-                uri={{bangtan},
-                }}
+                source={bangtan}
                 useNativeControls
                 resizeMode="contain"
                 isLooping
