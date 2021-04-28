@@ -7,30 +7,7 @@ export default class Date extends React.Component {
     render() {
     
     
-        function validateData() {
-            document.myform.addEventListener("submit", processForm, false);
-        }
-
-        function processForm(event) {
-            event.preventDefault();
-
-            let radio_buttons = document.myform.elements["survey_choice"];
-            for(x = 0; x < radio_buttons.length; x++) {
-                if (radio_buttons[x].checked) {
-                    document.getElementById("survey").innerHTML = ("You chose: " + radio_buttons[x].value + "!");
-                }
-            }
-
-            let radio_buttons = document.myform.elements["drink_choice"];
-            for(x = 0; x < radio_buttons.length; x++) {
-                if (radio_buttons[x].checked) {
-                    document.getElementById("drink").innerHTML = ("Your drink choice is: " + radio_buttons[x].value + "!");
-                }
-            }
-            return false;
-        }
-
-        window.addEventListener("load", validateData, false);
+   
         return (
             <>
     
