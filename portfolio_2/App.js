@@ -24,7 +24,16 @@ function LoginApp () {
                 <Todo></Todo>
                 
                 <Card.Divider/>
-                <Date></Date>
+                  <Card>
+                   <SafeAreaView style={styles.container}>
+                       <Text style={styles.header}>PLEASE ENTER THE PROVIDED INFORMATION:</Text>
+                       <Card.Divider/>
+                       <Text style={styles.text}>NAME: KIM NAMJOON</Text>
+                       <Text style={styles.text}>AGE: 26</Text>
+                       <Text style={styles.text}>TITLE: ARTIST</Text>
+                       <Card.Divider/>
+                   </SafeAreaView>
+               </Card>
                 
             </>
                 
