@@ -59,6 +59,8 @@ export default function passWord() {
                                 <Text style={styles.text}>
                                     One word, all lower case.
                                 </Text>
+                                
+                                <TextInput></TextInput>
                             </SafeAreaView>
                         </Card>
                     </>
