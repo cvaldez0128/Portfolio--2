@@ -28,7 +28,7 @@ function LoginApp () {
                     
                 </>
               
-            )
+            );
 }
 
 export default function doLogin() {
