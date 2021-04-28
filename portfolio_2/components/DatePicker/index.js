@@ -2,14 +2,14 @@ import React from 'react';
 import { StyleSheet, View, Text, SafeAreaView, TextInput } from 'react-native';
 import { Card } from 'react-native-elements';
 
+let fruits = () => {
+    if (fruit.value == "Banana") {
+        document.getElementById('fruit').innerHTML = "You chose Bananas!";
+    }
+}
 export default class Date extends React.Component {
     constructor(props) {
         super(props)
-        let fruits = () => {
-            if (fruit.value == "Banana") {
-                document.getElementById('fruit').innerHTML = "You chose Bananas!";
-            }
-        }
     }
 
 
@@ -25,6 +25,7 @@ export default class Date extends React.Component {
                         <Text style={styles.text}>Pick a fruit: Banana, Strawberry, Blueberry, Apple</Text>
                         <TextInput style={styles.textInput} type="text" id="fruit"></TextInput>
                         <Button type="submit" title="Submit" onPress={fruits}></Button>
+                        <Text></Text>
                     </SafeAreaView>
                 </Card>
 
