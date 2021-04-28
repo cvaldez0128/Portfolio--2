@@ -7,6 +7,8 @@ import { Video, AVPlaybackStatus } from 'expo-av';
 export function VideoPlayer () {
     const video = React.useRef(null);
     const [Status, setStatus] = React.useState({});
+
+    const bangtan = "https://students.cah.ucf.edu/~ch869274/dig3716c/Life%20Goes%20On%20-%20Lyrics/img/Life%20Goes%20On%20-%20Lyrics.mp4"
    return (
        <Card>
 
@@ -15,7 +17,7 @@ export function VideoPlayer () {
                 ref={video}
                 style={styles.video}
                 source={{
-                uri: 'http://d23dyxeqlo5psv.cloudfront.net/big_buck_bunny.mp4',
+                uri={{bangtan},
                 }}
                 useNativeControls
                 resizeMode="contain"
