@@ -42,6 +42,10 @@ export function VideoPlayer () {
 
 
 export function UserSurvey () {
+
+    let [userYes,setUserYes] = useState(false)
+    let yesRef = useRef(null)
+
     return (
         <>
             <Card>
