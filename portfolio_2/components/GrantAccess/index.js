@@ -48,8 +48,9 @@ export function UserSurvey () {
 
     let message = () => {
         if (yesRef.current.value == "Yes") {
-            
-        }
+            setUserYes(true)
+        } else {
+            setUserYes(false)
     }
     return (
         <>
