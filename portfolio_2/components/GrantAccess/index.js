@@ -76,7 +76,7 @@ export function UserSurvey () {
 
                 {userYes ?
 
-<>
+                    <>
                         <Text style={styles.text}>
                             Thank you so much! I'm glad you enjoyed it!
                         </Text>
@@ -84,9 +84,16 @@ export function UserSurvey () {
 
                 : undefined}
 
-           <Text style={styles.text}>
-               <p id="mess"></p>
-            </Text>
+                {!userYes ?
+                    <>
+                        <Text style={styles.text}>
+                            In the event that you didn't enjoy the video,
+                        </Text>
+                        <Text style={styles.text}>
+                            I'm sorry that it wasn't your cup of tea
+                        </Text>
+                    </>
+                : undefined}
                 </SafeAreaView>
             </Card>
 
