@@ -56,6 +56,10 @@ export function UserSurvey () {
     return (
         <>
             <Card>
+                {!userYes
+
+                    <>
+                    
                 <SafeAreaView style={styles.container}>
                    <Text style={styles.header}>Survey</Text>
                    <Card.Divider/>
@@ -66,6 +70,9 @@ export function UserSurvey () {
                     onPress={message}
                    ></TextInput>
                 </SafeAreaView>
+                    </>
+
+                : undefined}
             </Card>
         </>
     );
