@@ -59,7 +59,10 @@ export function UserSurvey () {
                 <SafeAreaView style={styles.container}>
                    <Text style={styles.header}>Survey</Text>
                    <Card.Divider/>
-                   <Text style={styles.text}></Text>
+                   <Text style={styles.text}>Did you like the video? Yes or No?</Text>
+                   <TextInput
+                    
+                   ></TextInput>
                 </SafeAreaView>
             </Card>
         </>
