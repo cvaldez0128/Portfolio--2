@@ -61,7 +61,9 @@ export function UserSurvey () {
                    <Card.Divider/>
                    <Text style={styles.text}>Did you like the video? Yes or No?</Text>
                    <TextInput
-                    
+                    style={styles.textInput}
+                    ref={yesRef}
+                    onPress={message}
                    ></TextInput>
                 </SafeAreaView>
             </Card>
