@@ -70,6 +70,7 @@ export function UserSurvey () {
                     title="Answer"
                     onPress={message}
                    ></Button>
+                   <Card.Divider/>
 
                 {userYes ?
 
