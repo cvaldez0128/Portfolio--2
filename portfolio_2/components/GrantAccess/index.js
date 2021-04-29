@@ -24,6 +24,7 @@ export function VideoPlayer () {
                 isLooping
                 onPlaybackStatusUpdate={status => setStatus(() => status)}
             />
+            <Text style={styles.text}>Video buffering?</Text>
             
             </SafeAreaView>
        </Card>
