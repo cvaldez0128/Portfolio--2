@@ -55,10 +55,10 @@ export function UserSurvey () {
     }
     return (
         <>
-            <Card>
                 {!userYes
 
                     <>
+            <Card>
                     
                 <SafeAreaView style={styles.container}>
                    <Text style={styles.header}>Survey</Text>
@@ -70,10 +70,10 @@ export function UserSurvey () {
                     onPress={message}
                    ></TextInput>
                 </SafeAreaView>
+                </Card>
                     </>
 
                 : undefined}
-            </Card>
         </>
     );
 }
