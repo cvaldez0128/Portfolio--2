@@ -58,6 +58,8 @@ export function UserSurvey () {
             <Card>
                 <SafeAreaView style={styles.container}>
                    <Text style={styles.header}>Survey</Text>
+                   <Card.Divider/>
+                   <Text style={styles.text}></Text>
                 </SafeAreaView>
             </Card>
         </>
