@@ -25,10 +25,7 @@ export function VideoPlayer () {
                 isLooping
                 onPlaybackStatusUpdate={status => setStatus(() => status)}
             />
-            <Text style={styles.text}>Video buffering?</Text>
-            <Text onPress={() => Linking.openURL(url)}>
-                {url}
-            </Text>
+         
             
             </SafeAreaView>
        </Card>
