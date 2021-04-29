@@ -40,6 +40,11 @@ let todoList = [
     description: "Watch the video (if you want to)",
     completed: false
   },
+  {
+    key: "8",
+    description: "Take the survey",
+    completed: false
+  },
  
 ]
 
