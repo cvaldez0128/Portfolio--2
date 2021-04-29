@@ -3,6 +3,7 @@ import { useState, useRef } from 'react'
 import { StyleSheet, View, Text, SafeAreaView, TextInput, Button, Linking } from 'react-native';
 import { Card } from 'react-native-elements';
 import { Video, AVPlaybackStatus } from 'expo-av';
+import RadioForm, { RadioButton, RadioButtonInput, RadioButtonLabel } from 'react-native-simple-radio-button';
 
 export function VideoPlayer () {
     const video = React.useRef(null);
@@ -39,6 +40,20 @@ export function VideoPlayer () {
   );
 }
 
+let hobbies = [
+    {
+        label: "Teasing",
+        value: 0
+    },
+    {
+        label: "Catching Plate",
+        value: 1
+    },
+    {
+        label: "Soaking in the sun",
+        value: 2
+    },
+]
 export function UserSurvey () {
     return (
         <>
