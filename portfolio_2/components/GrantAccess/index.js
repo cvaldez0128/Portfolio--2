@@ -15,7 +15,7 @@ export function VideoPlayer () {
 
             <SafeAreaView style={styles.container}>
                 <Text style={styles.header}>LIFE GOES ON</Text>
-                <Text>Hey hey hget</Text>
+                
                 <Card.Divider/>
             <Video
                 ref={video}
@@ -26,8 +26,11 @@ export function VideoPlayer () {
                 isLooping
                 onPlaybackStatusUpdate={status => setStatus(() => status)}
             />
-         
-            
+            <Card.Divider/>
+            <Text style={styles.text}>Video buffering?</Text>
+            <Text onPress={() => Linking.openURL(url)}>
+                    {url}
+            </Text>
             </SafeAreaView>
        </Card>
   );
