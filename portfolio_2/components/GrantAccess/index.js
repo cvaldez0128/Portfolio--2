@@ -70,11 +70,10 @@ export function UserSurvey () {
                     title="Answer"
                     onPress={message}
                    ></Button>
-                </SafeAreaView>
 
                 {userYes ?
 
-                    <>
+<>
                         <Text style={styles.text}>
                             Thank you so much! I'm glad you enjoyed it!
                         </Text>
@@ -89,6 +88,8 @@ export function UserSurvey () {
                         </Text>
                     </>
                 : undefined}
+                
+                </SafeAreaView>
             </Card>
 
             
