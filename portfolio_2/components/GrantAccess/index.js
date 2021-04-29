@@ -57,7 +57,14 @@ let hobbies = [
 export function UserSurvey () {
     return (
         <>
-        <Text>This is a test</Text>
+            <Card>
+                <SafeAreaView style={styles.container}>
+                    <RadioForm
+                        radio_props={hobbies}
+                        initial={2}
+                    />
+                </SafeAreaView>
+            </Card>
         </>
     );
 }
