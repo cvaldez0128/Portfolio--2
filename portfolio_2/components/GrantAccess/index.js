@@ -49,13 +49,15 @@ export function UserSurvey () {
     let message = () => {
         if (yesRef.current.value == "Yes") {
             setUserYes(true)
+        } else if (yesRef.current.value == "No") {
+            setUserYes(false)
         }
     }
     return (
         <>
             <Card>
                 <SafeAreaView style={styles.container}>
-                   
+                   <
                 </SafeAreaView>
             </Card>
         </>
