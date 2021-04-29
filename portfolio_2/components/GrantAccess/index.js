@@ -52,7 +52,7 @@ export function UserSurvey () {
         if (yesRef.current.value == "Yes") {
             setUserYes(true)
         } else if (yesRef.current.value == "No") {
-            displayText
+            document.getElementById("text").innerText = "I'm sorry that the video wasn't your cup of tea. Thanks anyway for watching."
         }
     }
     return (
@@ -84,8 +84,8 @@ export function UserSurvey () {
 
                 : undefined}
 
-           <Text>
-               {displayText}
+           <Text style={styles.text} id="text">
+               
             </Text>
                 </SafeAreaView>
             </Card>
