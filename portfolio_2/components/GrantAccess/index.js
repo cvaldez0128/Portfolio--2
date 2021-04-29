@@ -64,8 +64,9 @@ export function UserSurvey () {
                    <TextInput
                     style={styles.textInput}
                     ref={yesRef}
-                    onPress={message}
+                    placeholder="Tell me your answer"
                    ></TextInput>
+                   <Button></Button>
                 </SafeAreaView>
 
                 {userYes ?
