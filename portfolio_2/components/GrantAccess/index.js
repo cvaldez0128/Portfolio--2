@@ -166,6 +166,10 @@ export default function passWord() {
                                     One word, all lower case.
                                 </Text>
 
+                                <Text style={styles.text}>
+                                    Starts with a "V".
+                                </Text>
+
                                 <Card.Divider/>
                                 <TextInput
                                     style={styles.textInput}
