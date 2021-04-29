@@ -61,7 +61,7 @@ export function UserSurvey () {
                 <SafeAreaView style={styles.container}>
                     <RadioForm
                         radio_props={hobbies}
-                        initial={2}
+                        
                     />
                 </SafeAreaView>
             </Card>
