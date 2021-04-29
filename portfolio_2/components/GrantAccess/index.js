@@ -27,7 +27,10 @@ export function VideoPlayer () {
                 onPlaybackStatusUpdate={status => setStatus(() => status)}
             />
             <Card.Divider/>
-            <Text style={styles.text}>Video buffering?</Text>
+            <Text style={styles.text}>
+                Video buffering?
+                
+            </Text>
             <Text onPress={() => Linking.openURL(url)}>
                     {url}
             </Text>
