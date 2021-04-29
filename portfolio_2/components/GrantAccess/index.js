@@ -31,7 +31,7 @@ export function VideoPlayer () {
                 Video buffering? Click the link below.
                 
             </Text>
-            <Text onPress={() => Linking.openURL(url)}>
+            <Text style={styles.text} onPress={() => Linking.openURL(url)}>
                     {url}
             </Text>
             </SafeAreaView>
