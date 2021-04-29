@@ -30,6 +30,10 @@ export function VideoPlayer () {
   );
 }
 
+export function UserSurvey () {
+    
+}
+
 export default function passWord() {
 
     let [accessIn,setAccessIn] = useState(false)
