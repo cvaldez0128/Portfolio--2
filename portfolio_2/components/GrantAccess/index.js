@@ -31,7 +31,11 @@ export function VideoPlayer () {
 }
 
 export function UserSurvey () {
-    
+    return (
+        <>
+        <Text>This is a test</Text>
+        </>
+    );
 }
 
 export default function passWord() {
