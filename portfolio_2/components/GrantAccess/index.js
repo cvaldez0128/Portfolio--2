@@ -7,7 +7,7 @@ import { Video, AVPlaybackStatus } from 'expo-av';
 export function VideoPlayer () {
     const video = React.useRef(null);
     const [Status, setStatus] = React.useState({});
-    const url="https://google.com"
+    const url="https://youtu.be/6MkXW9AbG_M"
 
     const bangtan = "https://students.cah.ucf.edu/~ch869274/dig3716c/Life%20Goes%20On%20-%20Lyrics/img/Life%20Goes%20On%20-%20Lyrics.mp4"
    return (
