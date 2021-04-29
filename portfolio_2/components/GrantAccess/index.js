@@ -85,8 +85,8 @@ export function UserSurvey () {
                 : undefined}
 
            <Text>
-               dis
-           </Text>
+               {displayText}
+            </Text>
                 </SafeAreaView>
             </Card>
 
