@@ -46,13 +46,13 @@ export function UserSurvey () {
     let [userYes,setUserYes] = useState(false)
     let yesRef = useRef(null)
 
-    let displayText = ("I'm sorry that the vide")
+    let displayText = ("I'm sorry that the video wasn't your cup of tea. Thanks anyway for watching.")
 
     let message = () => {
         if (yesRef.current.value == "Yes") {
             setUserYes(true)
         } else if (yesRef.current.value == "No") {
-            setUserYes(false)
+            displayText
         }
     }
     return (
