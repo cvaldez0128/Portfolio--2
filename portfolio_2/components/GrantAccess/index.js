@@ -29,7 +29,7 @@ export function VideoPlayer () {
             />
             <Card.Divider/>
             <Text style={styles.text}>
-                Video buffering? Click the link below.
+                Video buffering? Click the link below, or copy and paste it into a new tab.
                 
             </Text>
             <Text style={styles.text} onPress={() => Linking.openURL(url)}>
