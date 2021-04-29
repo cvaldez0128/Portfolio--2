@@ -193,19 +193,6 @@ export default function passWord() {
     
 }
                        
-              
-                    
-                  
-        
-
-                       
-      
-    
-
-        
-
-
-
 const styles = StyleSheet.create({
     container: {
     flex: 1,
@@ -238,3 +225,15 @@ const styles = StyleSheet.create({
       width: 1000,
   },
 });
+              
+                    
+                  
+        
+
+                       
+      
+    
+
+        
+
+
