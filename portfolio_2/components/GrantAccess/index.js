@@ -66,7 +66,10 @@ export function UserSurvey () {
                     ref={yesRef}
                     placeholder="Tell me your answer"
                    ></TextInput>
-                   <Button></Button>
+                   <Button
+                    title="Answer"
+                    onPress={message}
+                   ></Button>
                 </SafeAreaView>
 
                 {userYes ?
