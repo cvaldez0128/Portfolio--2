@@ -112,6 +112,9 @@ export default function passWord() {
         if (codeRef.current.value == "vaccine") {
             setAccessIn(true)
             console.log("Code accepted")
+        } else {
+            setAccessIn(false)
+            document.getElementById("code").innerHTML = "Nope, guess again!"
         }
     } 
     
@@ -175,6 +178,11 @@ export default function passWord() {
                                     onPress={access}
                                     title="Enter">
                                 </Button>
+                                <Card.Divider/>
+
+                                <Text style={styles.text}>
+                                    <p id="code"></p>
+                                </Text>
 
                             </SafeAreaView>
                         </Card>
