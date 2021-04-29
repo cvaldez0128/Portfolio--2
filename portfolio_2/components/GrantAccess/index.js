@@ -81,14 +81,8 @@ export function UserSurvey () {
 
                 : undefined}
 
-                {!userYes ?
-                    <>
-                        <Text style={styles.text}>
-                            I'm sorry that the video wasn't your cup of tea. Thanks anyway for watching.
-                        </Text>
-                    </>
-                : undefined}
-                
+            
+
                 </SafeAreaView>
             </Card>
 
