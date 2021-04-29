@@ -55,31 +55,39 @@ export function UserSurvey () {
     }
     return (
         <>
+            
+            <Card>
+                <SafeAreaView style={styles.container}>
+                   <Text style={styles.header}>Survey</Text>
+                   <Card.Divider/>
+                   <Text style={styles.text}>Did you like the video? Yes or No?</Text>
+                   <TextInput
+                    style={styles.textInput}
+                    ref={yesRef}
+                    onPress={message}
+                   ></TextInput>
+                </SafeAreaView>
 
-            {userYes ?
+                {userYes ?
 
-                <>
-                    
-                </>
+                    <>
+                        <Text style={styles.text}>
+                            Thank you so much! I'm glad you enjoyed it!
+                        </Text>
+                    </>
 
-            : undefined}
-            {!userYes ?
-                <>
-                    <Card>
-                        <SafeAreaView style={styles.container}>
-                        <Text style={styles.header}>Survey</Text>
-                        <Card.Divider/>
-                        <Text style={styles.text}>Did you like the video? Yes or No?</Text>
-                        <TextInput
-                            style={styles.textInput}
-                            ref={yesRef}
-                            onPress={message}
-                        ></TextInput>
-                        </SafeAreaView>
-                    </Card>
-                </>
-            : undefined}
-                
+                : undefined}
+
+                {!userYes ?
+                    <>
+                        <Text style={styles.text}>
+                            I'm sorry that the video wasn't your cup of tea. Thanks anyway for watching.
+                        </Text>
+                    </>
+                : undefined}
+            </Card>
+
+            
         </>
     );
 }
