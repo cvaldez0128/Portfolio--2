@@ -7,6 +7,7 @@ import { Video, AVPlaybackStatus } from 'expo-av';
 export function VideoPlayer () {
     const video = React.useRef(null);
     const [Status, setStatus] = React.useState({});
+    const url="https://google.com"
 
     const bangtan = "https://students.cah.ucf.edu/~ch869274/dig3716c/Life%20Goes%20On%20-%20Lyrics/img/Life%20Goes%20On%20-%20Lyrics.mp4"
    return (
@@ -25,8 +26,8 @@ export function VideoPlayer () {
                 onPlaybackStatusUpdate={status => setStatus(() => status)}
             />
             <Text style={styles.text}>Video buffering?</Text>
-            <Text style={styles.text}>
-                
+            <Text onPress={() => Linking.openURL(url)}>
+                {url}
             </Text>
             
             </SafeAreaView>
