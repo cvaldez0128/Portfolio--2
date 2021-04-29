@@ -90,7 +90,7 @@ export function UserSurvey () {
                             In the event that you didn't enjoy the video,
                         </Text>
                         <Text style={styles.text}>
-                            I'm sorry that it wasn't your cup of tea
+                            I'm sorry that it wasn't your cup of tea. Thanks anyway for watching.
                         </Text>
                     </>
                 : undefined}

@@ -51,7 +51,7 @@ export default function doLogin() {
   
   
   let login = () => {
-    if (passRef.current.value == "c") {
+    if (passRef.current.value == "Ch@rge!") {
       setLoggedIn(true)
       console.log("Password accecpted")
     } else {
