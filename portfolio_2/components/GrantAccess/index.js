@@ -57,7 +57,7 @@ export function UserSurvey () {
         <>
             <Card>
                 <SafeAreaView style={styles.container}>
-                   <
+                   <Text style={styles.header}>Survey</Text>
                 </SafeAreaView>
             </Card>
         </>
