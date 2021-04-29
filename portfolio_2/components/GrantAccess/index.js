@@ -43,16 +43,7 @@ export function VideoPlayer () {
 
 export function UserSurvey () {
 
-    let [userYes,setUserYes] = useState(false)
-    let yesRef = useRef(null)
-
-    let message = () => {
-        if (yesRef.current.value == "Yes") {
-            setUserYes(true)
-        } else if (yesRef.current.value == "No") {
-            setUserYes(false)
-        }
-    }
+   
     return (
         <>
             <Card>
