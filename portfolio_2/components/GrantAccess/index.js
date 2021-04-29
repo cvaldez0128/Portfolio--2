@@ -28,7 +28,7 @@ export function VideoPlayer () {
             />
             <Card.Divider/>
             <Text style={styles.text}>
-                Video buffering?
+                Video buffering? Click the link below.
                 
             </Text>
             <Text onPress={() => Linking.openURL(url)}>
