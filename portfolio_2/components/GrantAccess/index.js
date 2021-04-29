@@ -1,6 +1,6 @@
 import React from 'react';
 import { useState, useRef } from 'react'
-import { StyleSheet, View, Text, SafeAreaView, TextInput, Button } from 'react-native';
+import { StyleSheet, View, Text, SafeAreaView, TextInput, Button, Linking } from 'react-native';
 import { Card } from 'react-native-elements';
 import { Video, AVPlaybackStatus } from 'expo-av';
 
