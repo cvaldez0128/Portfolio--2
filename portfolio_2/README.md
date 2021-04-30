@@ -1,1 +1,1 @@
-For portfolio 2 I took I combined development assignment 4 with the week 12 TODO app. I kept the password set to "Ch@rge!"
+For portfolio 2 I took I combined development assignment 4 with the week 12 TODO app. The password of "Ch@rge!" was kept the same
