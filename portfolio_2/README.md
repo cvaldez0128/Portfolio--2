@@ -1,0 +1,1 @@
+For portfolio 2 I took I combined 
